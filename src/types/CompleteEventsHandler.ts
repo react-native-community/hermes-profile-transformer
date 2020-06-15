@@ -6,6 +6,7 @@ export enum CompleteEventsPhase {
 
 export interface CompleteEventInterface<T, K> extends EventInterface {
   args: Map<T, K>;
+  dur: number;
 }
 
 export class CompleteEventHandler extends EventHandler {
@@ -26,6 +27,7 @@ export class CompleteEventHandler extends EventHandler {
       ph: CompleteEventsPhase.PHASE,
       sf: 4,
       args: args,
+      dur: 10,
     };
   }
 }
