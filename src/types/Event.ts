@@ -30,13 +30,13 @@ export class Event {
   handler!: EventHandler;
   constructor(row: EventInterface) {
     if (
-      row.ph == DurationEventsPhase.BEGIN ||
-      row.ph == DurationEventsPhase.END
+      row.ph === DurationEventsPhase.BEGIN ||
+      row.ph === DurationEventsPhase.END
     ) {
       this.handler = new DurationEventHandler(
         row as DurationEventInterface<string, number>
       );
-    } else if (row.ph == CompleteEventsPhase.PHASE) {
+    } else if (row.ph === CompleteEventsPhase.PHASE) {
       this.handler = new CompleteEventHandler(
         row as CompleteEventInterface<string, number>
       );
