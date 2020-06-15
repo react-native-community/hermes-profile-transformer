@@ -26,8 +26,3 @@ The package is optimized and bundled with Rollup into multiple formats (CommonJS
 
 Runs the test watcher (Jest) in an interactive mode.
 By default, runs tests related to files changed since the last commit.
-
-### `npm run dev` or `yarn run dev`
-
-Runs the `./dist/hermes-tracing-profile-transformer.esm.js` file in Nodemon and continuously outputs an console log.
-By default, added a delay of 2 seconds to ensure we don't print too many logs on the terminal on file change.

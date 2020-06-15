@@ -15,8 +15,7 @@
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
-    "dev": "nodemon --delay 1 ./dist/hermes-tracing-profile-transformer.esm.js"
+    "prepare": "tsdx build"
   },
   "peerDependencies": {},
   "husky": {
