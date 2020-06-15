@@ -1,8 +1,3 @@
-export enum DurationEventsPhase {
-  BEGIN = 'B',
-  END = 'E',
-}
-
 export enum AsyncEventsPhase {
   NESTABLE_START = 'b',
   NESTABLE_INSTANT = 'n',
