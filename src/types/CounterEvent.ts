@@ -1,4 +1,4 @@
-import {GeneralEvent} from "./GeneralEvent";
+import {GeneralEvent} from './GeneralEvent';
 //Counter Event type
 export class CounterEvent implements GeneralEvent<string, number>{
     name: string;
