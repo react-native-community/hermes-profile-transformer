@@ -1,4 +1,4 @@
-import {GeneralEvent} from "./GeneralEvent";
+import {GeneralEvent} from './GeneralEvent';
 //Instant Event type
 export class InstantEvent implements GeneralEvent<string, string>{
     name: string;
