@@ -29,7 +29,7 @@ const handleCompleteEvent = (event: CompleteEvents): CompleteEvents => {
   return event;
 };
 
-events.forEach(event => {
+events.forEach((event: Event): void => {
   switch (event.ph) {
     case EventsPhase.METADATA_EVENTS:
       handleMetadataEvent(event as MetadataEvents);
