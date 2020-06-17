@@ -53,6 +53,57 @@ export default {
         second: 2,
       },
     },
+    { name: 'sample', cat: 'foo', ph: 'P', ts: '123', pid: 234, tid: '645' },
+    {
+      name: 'MyOtherObject',
+      ph: 'N',
+      id: '0x1000',
+      ts: '20',
+      pid: 1,
+      tid: '1',
+    },
+    {
+      name: 'MyOtherObject',
+      ph: 'D',
+      id: '0x1000',
+      ts: '25',
+      pid: 1,
+      tid: '1',
+    },
+    {
+      name: 'clock_sync',
+      ph: 'c',
+      ts: '6790',
+      args: {
+        sync_id: 'guid1',
+        issue_ts: 6789,
+      },
+    },
+    {
+      name: 'clock_sync',
+      ph: 'c',
+      ts: '123',
+      args: {
+        sync_id: 'guid1',
+      },
+    },
+    { name: 'SomeContextType', ph: '(', ts: '123', id: '0x1234' },
+    { name: 'SomeContextType', ph: ')', ts: '123', id: '0x1234' },
+    { cat: 'foo', name: 'url_request', ph: 'b', ts: '0', id: 0x100 },
+    { cat: 'foo', name: 'url_headers', ph: 'b', ts: '1', id: 0x100 },
+    { cat: 'foo', name: 'http_cache', ph: 'n', ts: '3', id: 0x100 },
+    {
+      cat: 'foo',
+      name: 'url_headers',
+      ph: 'e',
+      ts: '2',
+      id: 0x100,
+      args: {
+        step: 'headers_complete',
+        response_code: 200,
+      },
+    },
+    { cat: 'foo', name: 'url_request', ph: 'e', ts: '4', id: 0x100 },
   ],
   samples: [
     {
