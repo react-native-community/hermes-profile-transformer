@@ -2,7 +2,6 @@ import testData from './testData';
 import { EventsPhase } from './types/Phases';
 import {
   Event,
-  SharedEventProperties,
   DurationEvent,
   CompleteEvent,
   MetadataEvent,
@@ -13,7 +12,7 @@ export const sum = (a: number, b: number) => {
   }
   return a + b;
 };
-const events: SharedEventProperties[] = testData.traceEvents;
+const events: Event[] = testData.traceEvents;
 
 const handleDurationEvent = (event: DurationEvent): DurationEvent => {
   console.log(event.ph);
@@ -30,19 +29,19 @@ const handleCompleteEvent = (event: CompleteEvent): CompleteEvent => {
   return event;
 };
 
-events.forEach((event: SharedEventProperties): void => {
+events.forEach((event: Event): void => {
   switch (event.ph) {
     case EventsPhase.METADATA_EVENTS:
-      handleMetadataEvent(event);
+      handleMetadataEvent(event as MetadataEvent);
       break;
 
     case EventsPhase.DURATION_EVENTS_BEGIN:
     case EventsPhase.DURATION_EVENTS_END:
-      handleDurationEvent(event);
+      handleDurationEvent(event as DurationEvent);
       break;
 
     case EventsPhase.COMPLETE_EVENTS:
-      handleCompleteEvent(event);
+      handleCompleteEvent(event as CompleteEvent);
       break;
   }
 });
