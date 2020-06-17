@@ -3,9 +3,9 @@ import { EventsPhase } from './types/Phases';
 import {
   Event,
   SharedEventProperties,
-  DurationEvents,
-  CompleteEvents,
-  MetadataEvents,
+  DurationEvent,
+  CompleteEvent,
+  MetadataEvent,
 } from './types/EventInterfaces';
 export const sum = (a: number, b: number) => {
   if ('development' === process.env.NODE_ENV) {
@@ -15,17 +15,17 @@ export const sum = (a: number, b: number) => {
 };
 const events: SharedEventProperties[] = testData.traceEvents;
 
-const handleDurationEvent = (event: DurationEvents): DurationEvents => {
+const handleDurationEvent = (event: DurationEvent): DurationEvent => {
   console.log(event.ph);
   return event;
 };
 
-const handleMetadataEvent = (event: MetadataEvents): MetadataEvents => {
+const handleMetadataEvent = (event: MetadataEvent): MetadataEvent => {
   console.log(event.ph);
   return event;
 };
 
-const handleCompleteEvent = (event: CompleteEvents): CompleteEvents => {
+const handleCompleteEvent = (event: CompleteEvent): CompleteEvent => {
   console.log(event.ph);
   return event;
 };

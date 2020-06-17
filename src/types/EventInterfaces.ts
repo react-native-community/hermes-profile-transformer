@@ -10,43 +10,28 @@ export interface SharedEventProperties {
   sf?: number;
   tts?: number;
   cname?: string;
+  args?: {
+    [key in string]: any;
+  };
 }
 
-interface DurationEventBegin<ArgsType> extends SharedEventProperties {
-  args?: {
-    [key in string]: ArgsType;
-  };
+interface DurationEventBegin extends SharedEventProperties {
   ph: EventsPhase.DURATION_EVENTS_BEGIN;
 }
 
-interface DurationEventEnd<ArgsType> extends SharedEventProperties {
-  args?: {
-    [key in string]: ArgsType;
-  };
+interface DurationEventEnd extends SharedEventProperties {
   ph: EventsPhase.DURATION_EVENTS_END;
 }
 
-export type DurationEvents =
-  | DurationEventBegin<number>
-  | DurationEventEnd<number>;
+export type DurationEvent = DurationEventBegin | DurationEventEnd;
 
-interface CompleteEvent<ArgsType> extends SharedEventProperties {
-  args?: {
-    [key in string]: ArgsType;
-  };
+export interface CompleteEvent extends SharedEventProperties {
   ph: EventsPhase.COMPLETE_EVENTS;
   dur: number;
 }
 
-export type CompleteEvents = CompleteEvent<number>;
-
-interface MetadataEvent<ArgsType> extends SharedEventProperties {
-  args?: {
-    [key in string]: ArgsType;
-  };
+export interface MetadataEvent extends SharedEventProperties {
   ph: EventsPhase.METADATA_EVENTS;
 }
 
-export type MetadataEvents = MetadataEvent<number>;
-
-export type Event = DurationEvents | CompleteEvents | MetadataEvents;
+export type Event = DurationEvent | CompleteEvent | MetadataEvent;
