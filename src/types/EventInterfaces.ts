@@ -11,39 +11,39 @@ export interface Event {
   cname?: string;
 }
 
-interface DurationEventBegin<Key extends string, ArgsType> extends Event {
+interface DurationEventBegin<ArgsType> extends Event {
   args: {
-    [key in Key]: ArgsType;
+    [key in string]: ArgsType;
   };
   ph: EventsPhase.DURATION_EVENTS_BEGIN;
 }
 
-interface DurationEventEnd<Key extends string, ArgsType> extends Event {
+interface DurationEventEnd<ArgsType> extends Event {
   args: {
-    [key in Key]: ArgsType;
+    [key in string]: ArgsType;
   };
   ph: EventsPhase.DURATION_EVENTS_END;
 }
 
 export type DurationEvents =
-  | DurationEventBegin<string, number>
-  | DurationEventEnd<string, number>;
+  | DurationEventBegin<number>
+  | DurationEventEnd<number>;
 
-interface CompleteEvent<Key extends string, ArgsType> extends Event {
+interface CompleteEvent<ArgsType> extends Event {
   args: {
-    [key in Key]: ArgsType;
+    [key in string]: ArgsType;
   };
   ph: EventsPhase.COMPLETE_EVENTS;
   dur: number;
 }
 
-export type CompleteEvents = CompleteEvent<string, number>;
+export type CompleteEvents = CompleteEvent<number>;
 
-interface MetadataEvent<Key extends string, ArgsType> extends Event {
+interface MetadataEvent<ArgsType> extends Event {
   args: {
-    [key in Key]: ArgsType;
+    [key in string]: ArgsType;
   };
   ph: EventsPhase.METADATA_EVENTS;
 }
 
-export type MetadataEvents = MetadataEvent<string, number>;
+export type MetadataEvents = MetadataEvent<number>;
