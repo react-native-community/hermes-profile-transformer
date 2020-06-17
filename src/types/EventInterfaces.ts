@@ -1,25 +1,26 @@
 import { EventsPhase } from './Phases';
 
-export interface Event {
+export interface SharedEventProperties {
   name?: string;
   cat?: string;
   ts: string;
   pid: number;
   tid: string;
-  ph: string;
+  ph: EventsPhase;
   sf?: number;
+  tts?: number;
   cname?: string;
 }
 
-interface DurationEventBegin<ArgsType> extends Event {
-  args: {
+interface DurationEventBegin<ArgsType> extends SharedEventProperties {
+  args?: {
     [key in string]: ArgsType;
   };
   ph: EventsPhase.DURATION_EVENTS_BEGIN;
 }
 
-interface DurationEventEnd<ArgsType> extends Event {
-  args: {
+interface DurationEventEnd<ArgsType> extends SharedEventProperties {
+  args?: {
     [key in string]: ArgsType;
   };
   ph: EventsPhase.DURATION_EVENTS_END;
@@ -29,8 +30,8 @@ export type DurationEvents =
   | DurationEventBegin<number>
   | DurationEventEnd<number>;
 
-interface CompleteEvent<ArgsType> extends Event {
-  args: {
+interface CompleteEvent<ArgsType> extends SharedEventProperties {
+  args?: {
     [key in string]: ArgsType;
   };
   ph: EventsPhase.COMPLETE_EVENTS;
@@ -39,11 +40,13 @@ interface CompleteEvent<ArgsType> extends Event {
 
 export type CompleteEvents = CompleteEvent<number>;
 
-interface MetadataEvent<ArgsType> extends Event {
-  args: {
+interface MetadataEvent<ArgsType> extends SharedEventProperties {
+  args?: {
     [key in string]: ArgsType;
   };
   ph: EventsPhase.METADATA_EVENTS;
 }
 
 export type MetadataEvents = MetadataEvent<number>;
+
+export type Event = DurationEvents | CompleteEvents | MetadataEvents;
