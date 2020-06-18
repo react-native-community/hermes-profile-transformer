@@ -17,13 +17,8 @@ import {
   MarkEvent,
   LinkedIDEvent,
 } from './types/EventInterfaces';
-export const sum = (a: number, b: number) => {
-  if ('development' === process.env.NODE_ENV) {
-    console.log('boop');
-  }
-  return a + b;
-};
-const events: Event[] = testData.traceEvents;
+
+const events: Event[] = testData.traceEvents as Event[];
 
 const handleDurationEvent = (event: DurationEvent): DurationEvent => {
   console.log(event.ph);
