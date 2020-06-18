@@ -154,5 +154,15 @@ events.forEach((event: Event): void => {
     case EventsPhase.LINKED_ID_EVENTS:
       handleLinkedIDEvent(event);
       break;
+    default: {
+      // This case should only be hit if we've forgotten to handle
+      // a type of event, or if the incoming data does not match any
+      // of the expected phases at runtime
+      throw new Error(
+        `Unknown event type "${
+          (event as any).ph
+        }" in trace event ${JSON.stringify(event)}`
+      );
+    }
   }
 });
