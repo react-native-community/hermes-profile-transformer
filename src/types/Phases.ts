@@ -26,4 +26,5 @@ export enum EventsPhase {
   ASYNC_EVENTS_STEP_INTO = 'T',
   ASYNC_EVENTS_STEP_PAST = 'p',
   ASYNC_EVENTS_END = 'F',
+  LINKED_ID_EVENTS = '=',
 }

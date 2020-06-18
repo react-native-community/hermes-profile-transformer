@@ -1,15 +1,45 @@
 import { EventsPhase } from './Phases';
 
 export interface SharedEventProperties {
+  /**
+   * name of the event
+   */
   name?: string;
+  /**
+   * event category
+   */
   cat?: string;
+  /**
+   * tracing clock timestamp
+   */
   ts: string;
+  /**
+   * process ID
+   */
   pid?: number;
+  /**
+   * thread ID
+   */
   tid?: string;
+  /**
+   * event type (phase)
+   */
   ph: EventsPhase;
+  /**
+   * id for a stackFrame object
+   */
   sf?: number;
+  /**
+   * thread clock timestamp
+   */
   tts?: number;
+  /**
+   * a fixed color name
+   */
   cname?: string;
+  /**
+   * event arguments
+   */
   args?: {
     [key in string]: any;
   };
@@ -96,6 +126,51 @@ interface AsyncEventEnd extends SharedEventProperties {
 
 export type AsyncEvent = AsyncEventStart | AsyncEventInstant | AsyncEventEnd;
 
+export interface InstantEvent extends SharedEventProperties {
+  ph: EventsPhase.INSTANT_EVENTS;
+  s: string;
+}
+
+export interface CounterEvent extends SharedEventProperties {
+  ph: EventsPhase.COUNTER_EVENTS;
+}
+
+interface FlowEventStart extends SharedEventProperties {
+  ph: EventsPhase.FLOW_EVENTS_START;
+}
+
+interface FlowEventStep extends SharedEventProperties {
+  ph: EventsPhase.FLOW_EVENTS_STEP;
+}
+interface FlowEventEnd extends SharedEventProperties {
+  ph: EventsPhase.FLOW_EVENTS_END;
+}
+
+export type FlowEvent = FlowEventStart | FlowEventStep | FlowEventEnd;
+
+interface MemoryDumpGlobal extends SharedEventProperties {
+  ph: EventsPhase.MEMORY_DUMP_EVENTS_GLOBAL;
+  id: string;
+}
+
+interface MemoryDumpProcess extends SharedEventProperties {
+  ph: EventsPhase.MEMORY_DUMP_EVENTS_PROCESS;
+  id: string;
+}
+export type MemoryDumpEvent = MemoryDumpGlobal | MemoryDumpProcess;
+
+export interface MarkEvent extends SharedEventProperties {
+  ph: EventsPhase.MARK_EVENTS;
+}
+
+export interface LinkedIDEvent extends SharedEventProperties {
+  ph: EventsPhase.LINKED_ID_EVENTS;
+  id: number;
+  args: {
+    linked_id: number;
+  };
+}
+
 export type Event =
   | DurationEvent
   | CompleteEvent
@@ -104,4 +179,10 @@ export type Event =
   | ObjectEvent
   | ClockSyncEvent
   | ContextEvent
-  | AsyncEvent;
+  | AsyncEvent
+  | InstantEvent
+  | CounterEvent
+  | FlowEvent
+  | MemoryDumpEvent
+  | MarkEvent
+  | LinkedIDEvent;
