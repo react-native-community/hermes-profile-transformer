@@ -92,67 +92,67 @@ const handleLinkedIDEvent = (event: LinkedIDEvent): LinkedIDEvent => {
 events.forEach((event: Event): void => {
   switch (event.ph) {
     case EventsPhase.METADATA_EVENTS:
-      handleMetadataEvent(event as MetadataEvent);
+      handleMetadataEvent(event);
       break;
 
     case EventsPhase.DURATION_EVENTS_BEGIN:
     case EventsPhase.DURATION_EVENTS_END:
-      handleDurationEvent(event as DurationEvent);
+      handleDurationEvent(event);
       break;
 
     case EventsPhase.COMPLETE_EVENTS:
-      handleCompleteEvent(event as CompleteEvent);
+      handleCompleteEvent(event);
       break;
 
     case EventsPhase.SAMPLE_EVENTS:
-      handleSampleEvent(event as SampleEvent);
+      handleSampleEvent(event);
       break;
 
     case EventsPhase.OBJECT_EVENTS_CREATED:
     case EventsPhase.OBJECT_EVENTS_SNAPSHOT:
     case EventsPhase.OBJECT_EVENTS_DESTROYED:
-      handleObjectEvent(event as ObjectEvent);
+      handleObjectEvent(event);
       break;
 
     case EventsPhase.CLOCK_SYNC_EVENTS:
-      handleClockSyncEvent(event as ClockSyncEvent);
+      handleClockSyncEvent(event);
       break;
 
     case EventsPhase.ASYNC_EVENTS_NESTABLE_START:
     case EventsPhase.ASYNC_EVENTS_NESTABLE_INSTANT:
     case EventsPhase.ASYNC_EVENTS_NESTABLE_END:
-      handleAsyncEvent(event as AsyncEvent);
+      handleAsyncEvent(event);
       break;
 
     case EventsPhase.CONTEXT_EVENTS_ENTER:
     case EventsPhase.CONTEXT_EVENTS_LEAVE:
-      handleContextEvent(event as ContextEvent);
+      handleContextEvent(event);
       break;
     case EventsPhase.INSTANT_EVENTS:
-      handleInstantEvent(event as InstantEvent);
+      handleInstantEvent(event);
       break;
 
     case EventsPhase.COUNTER_EVENTS:
-      handleCounterEvent(event as CounterEvent);
+      handleCounterEvent(event);
       break;
 
     case EventsPhase.FLOW_EVENTS_START:
     case EventsPhase.FLOW_EVENTS_STEP:
     case EventsPhase.FLOW_EVENTS_END:
-      handleFlowEvent(event as FlowEvent);
+      handleFlowEvent(event);
       break;
 
     case EventsPhase.MEMORY_DUMP_EVENTS_GLOBAL:
     case EventsPhase.MEMORY_DUMP_EVENTS_PROCESS:
-      handleMemoryDumpEvent(event as MemoryDumpEvent);
+      handleMemoryDumpEvent(event);
       break;
 
     case EventsPhase.MARK_EVENTS:
-      handleMarkEvent(event as MarkEvent);
+      handleMarkEvent(event);
       break;
 
     case EventsPhase.LINKED_ID_EVENTS:
-      handleLinkedIDEvent(event as LinkedIDEvent);
+      handleLinkedIDEvent(event);
       break;
   }
 });
