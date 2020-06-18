@@ -90,4 +90,42 @@ describe('Event', () => {
       { ts: 'ts', ph: 'invalid' },
     ]);
   });
+
+  it('should support type guards', () => {
+    // If we want to ensure that a type is *actually* of the type
+    // we want it to be instead of relying on type coercion/casting,
+    // we can use a type guard
+    //
+    // See: https://www.typescriptlang.org/docs/handbook/advanced-types.html#user-defined-type-guards
+    function isFlowEvent(event: any): event is FlowEvent {
+      return (
+        event.ph === EventsPhase.FLOW_EVENTS_START ||
+        event.ph === EventsPhase.FLOW_EVENTS_END ||
+        event.ph === EventsPhase.FLOW_EVENTS_STEP
+      );
+    }
+
+    // This function expects a flow event
+    function expectsFlowEvent(event: FlowEvent): any {
+      return event.ph;
+    }
+
+    // This
+    const flowEventLike = { ts: 'ts', ph: 's' };
+
+    // This fails, because string `s` is not coerced to EventsPhase
+    // @ts-expect-error
+    expectsFlowEvent(flowEventLike);
+
+    // But if we use our type guard first...
+    if (isFlowEvent(flowEventLike)) {
+      // This will pass, because isFlowEvent type guard refines the type
+      // by checking that the value matches the expected type
+      expectsFlowEvent(flowEventLike);
+    } else {
+      // This will fail, because the value didn't match
+      // @ts-expect-error
+      expectsFlowEvent(flowEventLike);
+    }
+  });
 });
