@@ -17,7 +17,6 @@ import {
   MarkEvent,
   LinkedIDEvent,
 } from './types/EventInterfaces';
-
 const events: Event[] = testData.traceEvents as Event[];
 
 const handleDurationEvent = (event: DurationEvent): DurationEvent => {
