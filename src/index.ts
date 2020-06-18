@@ -23,7 +23,7 @@ export const sum = (a: number, b: number) => {
   }
   return a + b;
 };
-const events: Event[] = testData.traceEvents;
+const events: Event[] = testData.traceEvents as Event[];
 
 const handleDurationEvent = (event: DurationEvent): DurationEvent => {
   console.log(event.ph);
