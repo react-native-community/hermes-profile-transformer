@@ -1,5 +1,5 @@
-import { Event, FlowEvent, DurationEvent } from '../EventInterfaces';
-import { EventsPhase } from '../Phases';
+import { Event, FlowEvent, DurationEvent } from '../src/types/EventInterfaces';
+import { EventsPhase } from '../src/types/Phases';
 
 /**
  * These tests are 50% about testing that the types are implemented correctly,

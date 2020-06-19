@@ -1,5 +1,10 @@
 {
-  "include": ["src", "types"],
+  "include": [
+    "src",
+    "types",
+    "test/Phases.test.ts",
+    "test/EventInterfaces.test.ts"
+  ],
   "compilerOptions": {
     "module": "esnext",
     "lib": ["dom", "esnext"],
