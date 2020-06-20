@@ -2,8 +2,8 @@
   "include": [
     "src",
     "types",
-    "test/Phases.test.ts",
-    "test/EventInterfaces.test.ts"
+    "src/__test__/Phases.test.ts",
+    "src/__test__/EventInterfaces.test.ts"
   ],
   "compilerOptions": {
     "module": "esnext",

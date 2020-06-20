@@ -1,4 +1,4 @@
-import { EventsPhase } from '../src/types/Phases';
+import { EventsPhase } from '../types/Phases';
 
 describe('EventPhase', () => {
   it('should map to corresponding string value correctly at type-level and runtime', () => {
