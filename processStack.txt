@@ -1,13 +1,13 @@
 callFunctionReturnFlushedQueue
  __guard
-  http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2470:3
+  (anonymous)
    __callFunction
     [Native] functionPrototypeApply
      receiveTouches
       _receiveRootNodeIDEvent
        batchedUpdates
         batchedUpdates$1
-         http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10609:4
+         (anonymous)
           runExtractedPluginEventsInBatch
            extractPluginEvents
             extractEvents
@@ -37,7 +37,7 @@ callFunctionReturnFlushedQueue
                      findHostInstance_DEPRECATED
                       findHostInstanceWithWarning
                     _dispatchPressedStateChange
-                     http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:8974:4
+                     (anonymous)
              setResponderAndExtractTransfer
               changeResponder
           runExtractedPluginEventsInBatch
@@ -75,7 +75,7 @@ callFunctionReturnFlushedQueue
           flushSyncCallbackQueueImpl
            runWithPriority
             unstable_runWithPriority
-             http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:12701:3
+             (anonymous)
               performSyncWorkOnRoot
                workLoopSync
                 performUnitOfWork
@@ -92,7 +92,7 @@ callFunctionReturnFlushedQueue
                       createElementWithValidation
                        validatePropTypes
                         checkPropTypes
-                         http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:3
+                         (anonymous)
                           [Native] functionPrototypeApply
                            chainedCheckType
                             [Native] functionPrototypeApply
@@ -114,14 +114,14 @@ callFunctionReturnFlushedQueue
                       createElementWithValidation
                        validatePropTypes
                         checkPropTypes
-                         http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:3
+                         (anonymous)
                           [Native] functionPrototypeApply
                            chainedCheckType
                             [Native] functionPrototypeApply
                              checkType
                               _objectSpread
                                [Native] arrayPrototypeForEach
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:21
+                                (anonymous)
                                  _defineProperty
                    updateClassComponent
                     finishClassComponent
@@ -129,7 +129,7 @@ callFunctionReturnFlushedQueue
                       createElementWithValidation
                        validatePropTypes
                         checkPropTypes
-                         http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:3
+                         (anonymous)
                           [Native] functionPrototypeApply
                            chainedCheckType
                             [Native] functionPrototypeApply
@@ -205,7 +205,7 @@ callFunctionReturnFlushedQueue
                       createElementWithValidation
                        validatePropTypes
                         checkPropTypes
-                         http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:3
+                         (anonymous)
                           [Native] functionPrototypeApply
                            chainedCheckType
                             [Native] functionPrototypeApply
@@ -221,7 +221,7 @@ callFunctionReturnFlushedQueue
                       createElementWithValidation
                        validatePropTypes
                         checkPropTypes
-                         http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:3
+                         (anonymous)
                           [Native] functionPrototypeApply
                            chainedCheckType
                             [Native] functionPrototypeApply
@@ -229,21 +229,21 @@ callFunctionReturnFlushedQueue
                      render
                       _objectSpread
                        [Native] arrayPrototypeForEach
-                        http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:62371:44
+                        (anonymous)
                          checkType
                     finishClassComponent
                      reconcileChildren
                      render
                       _objectSpread
                        [Native] arrayPrototypeForEach
-                        http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:55917:20
+                        (anonymous)
                             enqueueNativeCall
                              [HostFunction]
                      App
                       createElementWithValidation
                        validatePropTypes
                         checkPropTypes
-                         http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:3
+                         (anonymous)
                           [Native] functionPrototypeApply
                            chainedCheckType
                             [Native] functionPrototypeApply
@@ -278,7 +278,7 @@ callFunctionReturnFlushedQueue
                       createElementWithValidation
                        validatePropTypes
                         checkPropTypes
-                         http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:3
+                         (anonymous)
                           [Native] functionPrototypeApply
                            chainedCheckType
                             [Native] functionPrototypeApply
@@ -300,13 +300,13 @@ callFunctionReturnFlushedQueue
                 performUnitOfWork
                  resetCurrentFiber
                   startProfilerTimer
-                   http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46899:4
+                   (anonymous)
                           componentDidUpdate
                            replaceStackEntry
-                            http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:68223:4
+                            (anonymous)
                              setImmediate
                               _allocateCallback
-  http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2469:3
+  (anonymous)
                   traverseTwoPhase
                    accumulateDirectionalDispatches
                     listenerAtPhase
@@ -316,7 +316,7 @@ callFunctionReturnFlushedQueue
                       createElementWithValidation
                        validatePropTypes
                         checkPropTypes
-                         http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:3
+                         (anonymous)
                           [Native] functionPrototypeApply
                            chainedCheckType
                             [Native] functionPrototypeApply
@@ -327,14 +327,14 @@ callFunctionReturnFlushedQueue
                      reconcileChildren
                       reconcileChildFibers
                    updateContextConsumer
-                    http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54661:5
+                    (anonymous)
                      [Native] objectAssign
                   assignFiberPropertiesInDEV
                      render
                       createElementWithValidation
                        validatePropTypes
                         checkPropTypes
-                         http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:3
+                         (anonymous)
                           [Native] functionPrototypeApply
                            chainedCheckType
                             [Native] functionPrototypeApply
@@ -355,14 +355,14 @@ callFunctionReturnFlushedQueue
                                validate
                        validatePropTypes
                         checkPropTypes
-                         http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:3
+                         (anonymous)
                           [Native] functionPrototypeApply
                            chainedCheckType
                             [Native] functionPrototypeApply
                              checkType
                               _objectSpread
                                [Native] arrayPrototypeForEach
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:21
+                                (anonymous)
                                  _defineProperty
                  completeUnitOfWork
                   resetChildExpirationTime
@@ -372,7 +372,7 @@ callFunctionReturnFlushedQueue
                      reconcileChildFibers
                       placeSingleChild
                 performUnitOfWork
-                    http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54654:3
+                    (anonymous)
                      createElementWithValidation
                       isValidElementType
                  _performTransitionSideEffects
@@ -391,11 +391,11 @@ callFunctionReturnFlushedQueue
                              checkType
                               _objectSpread
                                [Native] arrayPrototypeForEach
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:20
+                                (anonymous)
                              checkType
                               _objectSpread
                                [Native] arrayPrototypeForEach
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:21
+                                (anonymous)
                                  _defineProperty
                       createElementWithValidation
                        validatePropTypes
@@ -403,12 +403,12 @@ callFunctionReturnFlushedQueue
                      render
                       _objectSpread
                        [Native] arrayPrototypeForEach
-                        http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:55917:46
+                        (anonymous)
                          [Native] objectDefineProperty
            runEventsInBatch
              recordTouchTrack
               isEndish
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:21
+                                (anonymous)
                                  _defineProperty
                              checkType
                               [Native] functionPrototypeApply
@@ -503,7 +503,7 @@ callFunctionReturnFlushedQueue
                                        isValidArgument
                                         [Native] arrayPrototypeEvery
                                          isValidArgument
-                        http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:62371:46
+                        (anonymous)
                          [Native] objectDefineProperty
                              checkType
                               [Native] functionPrototypeApply
@@ -523,7 +523,7 @@ callFunctionReturnFlushedQueue
                      shouldPreventMouseEvent
                    updateHostComponent
                     markRef
-                    http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54661:3
+                    (anonymous)
                      createElementWithValidation
                       [Native] functionPrototypeApply
                        createElement
@@ -533,12 +533,12 @@ callFunctionReturnFlushedQueue
                              checkType
                               _objectSpread
                                [Native] arrayPrototypeForEach
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:20
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:20
+                                (anonymous)
+                                (anonymous)
                       _objectSpread
                        ownKeys
                         [Native] arrayPrototypeFilter
-                        http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:62371:51
+                        (anonymous)
                          [Native] objectGetOwnPropertyDescriptor
                              checkType
                               [Native] functionPrototypeApply
@@ -555,7 +555,7 @@ callFunctionReturnFlushedQueue
                              checkType
                               _objectSpread
                                [Native] arrayPrototypeForEach
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:21
+                                (anonymous)
                                  _defineProperty
                       reconcileSingleElement
                        coerceRef
@@ -563,14 +563,14 @@ callFunctionReturnFlushedQueue
                    bailoutOnAlreadyFinishedWork
    __callFunction
     invariant
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:20
+                                (anonymous)
                              checkType
                         checkPropTypes
                          [Native] functionPrototypeCall
                           [Native] objectPrototypeHasOwnProperty
                               _objectSpread
                                [Native] arrayPrototypeForEach
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:21
+                                (anonymous)
                                  _defineProperty
                      Image
                       createElementWithValidation
@@ -602,7 +602,7 @@ callFunctionReturnFlushedQueue
                              checkType
                                validate
                                 getViewManagerConfig
-                    http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54647:5
+                    (anonymous)
                      createElementWithValidation
                       [Native] functionPrototypeApply
                        createElement
@@ -626,7 +626,7 @@ callFunctionReturnFlushedQueue
            flushSyncCallbackQueueImpl
             runWithPriority
              unstable_runWithPriority
-              http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:12701:3
+              (anonymous)
                performSyncWorkOnRoot
                 finishSyncRender
                  commitRoot
@@ -651,7 +651,7 @@ callFunctionReturnFlushedQueue
             flushSyncCallbackQueueImpl
              runWithPriority
               unstable_runWithPriority
-               http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:12701:3
+               (anonymous)
                 performSyncWorkOnRoot
                  workLoopSync
                   performUnitOfWork
@@ -663,20 +663,20 @@ callFunctionReturnFlushedQueue
                         createElementWithValidation
                          validatePropTypes
                           checkPropTypes
-                           http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:3
+                           (anonymous)
                             [Native] functionPrototypeApply
                              chainedCheckType
                               [Native] functionPrototypeApply
                                checkType
                                 _objectSpread
                                  [Native] arrayPrototypeForEach
-                                  http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:21
+                                  (anonymous)
                                    _defineProperty
                        App
                         createElementWithValidation
                          validatePropTypes
                           checkPropTypes
-                           http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:3
+                           (anonymous)
                             [Native] functionPrototypeApply
                              chainedCheckType
                               [Native] functionPrototypeApply
@@ -687,7 +687,7 @@ callFunctionReturnFlushedQueue
                         createElementWithValidation
                          validatePropTypes
                           checkPropTypes
-                           http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:3
+                           (anonymous)
                             [Native] functionPrototypeApply
                              chainedCheckType
                               [Native] functionPrototypeApply
@@ -745,7 +745,7 @@ callFunctionReturnFlushedQueue
       _receiveRootNodeIDEvent
        batchedUpdates
         batchedUpdates$1
-         http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10609:4
+         (anonymous)
           runExtractedPluginEventsInBatch
            runEventsInBatch
             forEachAccumulated
@@ -767,7 +767,7 @@ callFunctionReturnFlushedQueue
                              checkType
                               _objectSpread
                                [Native] arrayPrototypeForEach
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:20
+                                (anonymous)
                      App
                       createElementWithValidation
                        [Native] functionPrototypeApply
@@ -780,7 +780,7 @@ callFunctionReturnFlushedQueue
                     updateClassInstance
                      getMaskedContext
                      createElementWithValidation
-                        http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:55917:51
+                        (anonymous)
                          [Native] objectGetOwnPropertyDescriptor
                         commitLayoutEffects
                 accumulateTwoPhaseDispatchesSingle
@@ -832,8 +832,8 @@ callFunctionReturnFlushedQueue
                                isValidArgument
                 performUnitOfWork
                  startProfilerTimer
-                  http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46899:4
-                         http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54889:6
+                  (anonymous)
+                         (anonymous)
                    commitRootImpl
                     invokeGuardedCallback
                      [Native] functionPrototypeApply
@@ -841,7 +841,7 @@ callFunctionReturnFlushedQueue
                        [Native] functionPrototypeCall
                         [Native] arrayPrototypeSlice
                 executeDispatchesInOrder
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:21
+                                (anonymous)
                                  _defineProperty
                              checkType
                               [Native] arrayPrototypeConcat
@@ -850,7 +850,7 @@ callFunctionReturnFlushedQueue
                                  checkType
                      reconcileChildFibers
                       reconcileChildrenArray
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:20
+                                (anonymous)
                      render
                       _objectWithoutProperties
                        _objectWithoutPropertiesLoose
@@ -926,7 +926,7 @@ callFunctionReturnFlushedQueue
                [Native] arrayPrototypePop
                    onPressIn
                     _dispatchHotspotUpdate
-                     http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:8979:4
+                     (anonymous)
                       dispatchCommand
                        nonPromiseMethodWrapper
                         enqueueNativeCall
@@ -948,7 +948,7 @@ callFunctionReturnFlushedQueue
                    commitRootImpl
                     onCommitRoot
                      onCommitFiberRoot
-                      http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46049:4
+                      (anonymous)
                        [Native] functionPrototypeApply
             extractEvents
              accumulateDirectDispatches
@@ -956,7 +956,7 @@ callFunctionReturnFlushedQueue
                [Native] functionPrototypeCall
                 accumulateDirectDispatchesSingle
                  accumulateDispatches
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:20
+                                (anonymous)
                      render
                       createElementWithValidation
                        [Native] functionPrototypeApply
@@ -970,7 +970,7 @@ callFunctionReturnFlushedQueue
                            _deactivate
                             onPressOut
                              _dispatchPressedStateChange
-                              http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:8979:4
+                              (anonymous)
                                dispatchCommand
                                 nonPromiseMethodWrapper
                                  enqueueNativeCall
@@ -979,10 +979,10 @@ callFunctionReturnFlushedQueue
                         checkPropTypes
                          [Native] functionPrototypeCall
                           [Native] objectPrototypeHasOwnProperty
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:21
+                                (anonymous)
                                  _defineProperty
                         onResponderRelease
-                                http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:21
+                                (anonymous)
                                  _defineProperty
                         ReactElement
                          [Native] objectDefineProperty
@@ -990,7 +990,7 @@ callFunctionReturnFlushedQueue
                      markRef
                       invokeGuardedCallbackImpl
                  startProfilerTimer
-                  http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46900:2
+                  (anonymous)
                    [Native] dateNow
                       reconcileSingleTextNode
                        useFiber
