@@ -2,8 +2,8 @@
   "include": [
     "src",
     "types",
-    "src/__test__/Phases.test.ts",
-    "src/__test__/EventInterfaces.test.ts"
+    "src/__test__/phases.test.ts",
+    "src/__test__/chromeEventInterfaces.test.ts"
   ],
   "compilerOptions": {
     "module": "esnext",

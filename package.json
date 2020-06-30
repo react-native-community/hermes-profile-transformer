@@ -38,5 +38,9 @@
     "tslib": "^2.0.0",
     "typescript": "^3.9.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@types/lodash": "^4.14.157",
+    "@types/node": "^14.0.14",
+    "lodash": "^4.17.15"
+  }
 }

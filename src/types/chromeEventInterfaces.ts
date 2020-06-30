@@ -12,7 +12,7 @@ export interface SharedEventProperties {
   /**
    * tracing clock timestamp
    */
-  ts: string;
+  ts: number;
   /**
    * process ID
    */
@@ -20,7 +20,7 @@ export interface SharedEventProperties {
   /**
    * thread ID
    */
-  tid?: string;
+  tid?: number;
   /**
    * event type (phase)
    */

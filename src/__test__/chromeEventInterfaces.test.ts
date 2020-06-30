@@ -1,5 +1,9 @@
-import { Event, FlowEvent, DurationEvent } from '../types/EventInterfaces';
-import { EventsPhase } from '../types/Phases';
+import {
+  Event,
+  FlowEvent,
+  DurationEvent,
+} from '../types/ChromeEventInterfaces';
+import { EventsPhase } from '../types/phases';
 
 /**
  * These tests are 50% about testing that the types are implemented correctly,
