@@ -96,7 +96,7 @@ export class CallGraph {
 
   /*Remove Events with incorrect number; 
   i.e. if the same event name has an odd number of events associated to it,
-   make the last instance an instant event rather than a Duration Event */
+   we don't consider the event. */
   fixChromeEvents(
     chromeEvents: SharedEventProperties[],
     eventDetails: { [key in string]: { ph: EventsPhase; count: number } }
@@ -112,6 +112,7 @@ export class CallGraph {
       for (let i = chromeEvents.length - 1; i >= 0; i--) {
         if (incorrectEvents.includes(chromeEvents[i].name!)) {
           _.remove(incorrectEvents, event => event === chromeEvents[i].name);
+          continue;
         }
         correctEvents.push(chromeEvents[i]);
       }
