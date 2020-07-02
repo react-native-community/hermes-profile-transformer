@@ -1,10 +1,5 @@
 {
-  "include": [
-    "src",
-    "types",
-    "src/__test__/phases.test.ts",
-    "src/__test__/chromeEventInterfaces.test.ts"
-  ],
+  "include": ["src", "types", "utils", "__test__"],
   "compilerOptions": {
     "module": "esnext",
     "lib": ["dom", "esnext"],
