@@ -86,6 +86,17 @@ export class CallGraph {
     return node;
   }
 
+  graphDepth(node: Node): number {
+    if (node.children.length === 0) {
+      return 0;
+    }
+    let maxDepth = 1;
+    for (let i = 0; i < node.children.length; i++) {
+      maxDepth = Math.max(maxDepth, 1 + this.graphDepth(node.children[i]));
+    }
+    return maxDepth;
+  }
+
   constructChromeSample = (sample: EventDetails): CompleteEvent => {
     return {
       pid: sample.details.pid,
@@ -101,6 +112,7 @@ export class CallGraph {
 
   /* Sets phase for all events in one node */
   setNodePhase(node: Node): CompleteEvent[] {
+    node = this.sortNodeEvents(node);
     const chromeEvents: CompleteEvent[] = [];
     const eventDetails: { [key in string]: EventDetails } = {};
     if (node.events.length) {
@@ -121,12 +133,10 @@ export class CallGraph {
         chromeEvents.push(this.constructChromeSample(eventDetails[event]));
       }
     }
-
     return chromeEvents;
   }
 
-  /*Traverse through the Call graph and sort their events property by timestamp, 
-  assign "B" and "E" accordingly*/
+  /*Traverse through the Call graph and sort their events property by timestamp, and assign dur accordingly*/
   setAllNodePhases(node: Node): CompleteEvent[] {
     const events: CompleteEvent[] = [];
     events.push(...this.setNodePhase(node));

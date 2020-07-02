@@ -73,6 +73,11 @@ export const constructProcessGraph = (
     const pidEvents: SharedEventProperties[] = pidGraph.setAllNodePhases(
       pidGraph.root
     );
+    console.log(
+      `The depth of the process tree ${pid} is ${pidGraph.graphDepth(
+        pidGraph.root
+      )}`
+    );
     writeFileSync('graph.json', JSON.stringify(pidGraph, null, 2));
     chromeEvents.push(...pidEvents);
   });
