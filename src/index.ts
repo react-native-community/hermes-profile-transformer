@@ -20,7 +20,6 @@ const events: SharedEventProperties[] = constructProcessGraph(
   processed_samples,
   stackFrames
 );
-// events.push(...traceEvents);
 const sorted_events = events.sort((a, b) =>
   a.ts < b.ts ? -1 : a.ts > b.ts ? 1 : 0
 );

@@ -1,7 +1,14 @@
 import _ from 'lodash';
 import { HermesSample } from '../types/hermesProfileInterfaces';
-import { SharedEventProperties } from '../types/chromeEventInterfaces';
+import { CompleteEvent } from '../types/chromeEventInterfaces';
 import { EventsPhase } from '../types/Phases';
+
+interface EventDetails {
+  dur: number;
+  initTs: number;
+  details: HermesSample;
+}
+
 export class Node {
   children: Node[];
   constructor(public id: number, public events: HermesSample[]) {
@@ -79,82 +86,49 @@ export class CallGraph {
     return node;
   }
 
-  constructChromeSample = (
-    sample: HermesSample,
-    ph: EventsPhase
-  ): SharedEventProperties => {
+  constructChromeSample = (sample: EventDetails): CompleteEvent => {
     return {
-      pid: sample.pid,
-      tid: Number(sample.tid),
-      ts: Number(sample.ts),
-      name: sample.name,
-      cat: sample.stackFrameData?.category || 'JavaScript',
-      args: { name: sample.name },
-      ph: ph,
+      pid: sample.details.pid,
+      tid: Number(sample.details.tid),
+      ts: Number(sample.initTs),
+      name: sample.details.name,
+      cat: sample.details.stackFrameData?.category || 'JavaScript',
+      args: { name: sample.details.name },
+      ph: EventsPhase.COMPLETE_EVENTS,
+      dur: sample.dur,
     };
   };
 
-  /*Remove Events with incorrect number; 
-  i.e. if the same event name has an odd number of events associated to it,
-   we don't consider the event. */
-  fixChromeEvents(
-    chromeEvents: SharedEventProperties[],
-    eventDetails: { [key in string]: { ph: EventsPhase; count: number } }
-  ): SharedEventProperties[] {
-    const incorrectEvents: string[] = [];
-    for (let eventName in eventDetails) {
-      if (eventDetails[eventName].count % 2) {
-        incorrectEvents.push(eventName);
-      }
-    }
-    const correctEvents: SharedEventProperties[] = [];
-    if (incorrectEvents.length) {
-      for (let i = chromeEvents.length - 1; i >= 0; i--) {
-        if (incorrectEvents.includes(chromeEvents[i].name!)) {
-          _.remove(incorrectEvents, event => event === chromeEvents[i].name);
-          continue;
-        }
-        correctEvents.push(chromeEvents[i]);
-      }
-    }
-    return correctEvents;
-  }
-
   /* Sets phase for all events in one node */
-  setNodePhase(node: Node): SharedEventProperties[] {
-    const chromeEvents: SharedEventProperties[] = [];
-    const eventDetails: {
-      [key in string]: { ph: EventsPhase; count: number };
-    } = {};
+  setNodePhase(node: Node): CompleteEvent[] {
+    const chromeEvents: CompleteEvent[] = [];
+    const eventDetails: { [key in string]: EventDetails } = {};
     if (node.events.length) {
       for (let i = 0; i < node.events.length; i++) {
         const event: HermesSample = node.events[i];
         if (!(event.name in eventDetails)) {
           eventDetails[event.name] = {
-            ph: EventsPhase.DURATION_EVENTS_BEGIN,
-            count: 1,
+            dur: 0,
+            initTs: Number(event.ts),
+            details: event,
           };
+        } else {
+          eventDetails[event.name].dur =
+            Number(event.ts) - eventDetails[event.name].initTs;
         }
-        chromeEvents.push(
-          this.constructChromeSample(event, eventDetails[event.name].ph)
-        );
-        eventDetails[event.name].count += 1;
-        if (eventDetails[event.name].ph === EventsPhase.DURATION_EVENTS_BEGIN)
-          eventDetails[event.name].ph = EventsPhase.DURATION_EVENTS_END;
-        else eventDetails[event.name].ph = EventsPhase.DURATION_EVENTS_END;
+      }
+      for (let event in eventDetails) {
+        chromeEvents.push(this.constructChromeSample(eventDetails[event]));
       }
     }
-    const lastFix: SharedEventProperties[] = this.fixChromeEvents(
-      chromeEvents,
-      eventDetails
-    );
-    return lastFix;
+
+    return chromeEvents;
   }
 
   /*Traverse through the Call graph and sort their events property by timestamp, 
   assign "B" and "E" accordingly*/
-  setAllNodePhases(node: Node): SharedEventProperties[] {
-    const events: SharedEventProperties[] = [];
+  setAllNodePhases(node: Node): CompleteEvent[] {
+    const events: CompleteEvent[] = [];
     events.push(...this.setNodePhase(node));
     for (let i = 0; i < node.children.length; i++) {
       events.push(...this.setAllNodePhases(node.children[i]));
