@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import { HermesSample } from '../types/hermesProfileInterfaces';
 import { Event } from '../types/chromeEventInterfaces';
 import { EventsPhase } from '../types/Phases';
