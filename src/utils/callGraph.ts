@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import { HermesSample } from '../types/hermesProfileInterfaces';
-import { CompleteEvent } from '../types/chromeEventInterfaces';
+import { Event } from '../types/chromeEventInterfaces';
 import { EventsPhase } from '../types/Phases';
 
 interface EventDetails {
@@ -97,7 +97,7 @@ export class CallGraph {
     return maxDepth;
   }
 
-  constructChromeSample = (sample: EventDetails): CompleteEvent => {
+  constructChromeSample = (sample: EventDetails): Event => {
     return {
       pid: sample.details.pid,
       tid: Number(sample.details.tid),
@@ -111,9 +111,9 @@ export class CallGraph {
   };
 
   /* Sets phase for all events in one node */
-  setNodePhase(node: Node): CompleteEvent[] {
+  setNodePhase(node: Node): Event[] {
     node = this.sortNodeEvents(node);
-    const chromeEvents: CompleteEvent[] = [];
+    const chromeEvents: Event[] = [];
     const eventDetails: { [key in string]: EventDetails } = {};
     if (node.events.length) {
       for (let i = 0; i < node.events.length; i++) {
@@ -137,8 +137,8 @@ export class CallGraph {
   }
 
   /*Traverse through the Call graph and sort their events property by timestamp, and assign dur accordingly*/
-  setAllNodePhases(node: Node): CompleteEvent[] {
-    const events: CompleteEvent[] = [];
+  setAllNodePhases(node: Node): Event[] {
+    const events: Event[] = [];
     events.push(...this.setNodePhase(node));
     for (let i = 0; i < node.children.length; i++) {
       events.push(...this.setAllNodePhases(node.children[i]));
