@@ -30,6 +30,9 @@
 // import ip from 'ip';
 // import { SourceMapConsumer, RawSourceMap } from 'source-map';
 
+import axios, { AxiosResponse } from 'axios';
+import { SourceMapConsumer, RawSourceMap } from 'source-map';
+
 import {
   DurationEvent,
   HermesCPUProfile,
@@ -38,6 +41,7 @@ import {
   CPUProfileChunk,
   CPUProfileChunkNode,
   CPUProfileChunker,
+  SourceMap,
 } from '../types/EventInterfaces';
 import { EventsPhase } from '../types/Phases';
 
@@ -316,39 +320,49 @@ export class CpuProfilerModel {
     };
   }
 
-  // /** @type {Map<string, CpuProfile>} */
-  //   const profiles = new Map();
-  //   for (const event of traceEvents) {
-  //     if (event.name !== 'Profile' && event.name !== 'ProfileChunk') continue;
-  //     if (typeof event.id !== 'string') continue;
+  /**
+   * Refer to the source maps for the `index.bundle` file. Throws error if debug server not running
+   * @param {string} metroServerURL
+   * @param {DurationEvent[]} chromeEvents
+   * @throws {Debug Server not running}
+   * @returns {DurationEvent[]}
+   */
+  static async changeNamesToSourceMaps(
+    metroServerURL: string,
+    chromeEvents: DurationEvent[]
+  ): Promise<DurationEvent[]> {
+    const response = (await axios.get(metroServerURL)) as AxiosResponse<
+      SourceMap
+    >;
+    if (!response.data) {
+      throw new Error('Incorrect Debug Port Provided');
+    }
+    const sourceMap: SourceMap = response.data;
+    const rawSourceMap: RawSourceMap = {
+      version: Number(sourceMap.version),
+      file: 'index.bundle',
+      sources: sourceMap.sources,
+      mappings: sourceMap.mappings,
+      names: sourceMap.names,
+    };
 
-  //     const cpuProfileArg =
-  //       (event.args.data && event.args.data.cpuProfile) || {};
-  //     const timeDeltas =
-  //       (event.args.data && event.args.data.timeDeltas) ||
-  //       cpuProfileArg.timeDeltas;
-  //     let profile = profiles.get(event.id);
-
-  //     if (event.name === 'Profile') {
-  //       profile = {
-  //         id: event.id,
-  //         pid: event.pid,
-  //         tid: event.tid,
-  //         startTime: (event.args.data && event.args.data.startTime) || event.ts,
-  //         nodes: cpuProfileArg.nodes || [],
-  //         samples: cpuProfileArg.samples || [],
-  //         timeDeltas: timeDeltas || [],
-  //       };
-  //     } else {
-  //       if (!profile) continue;
-  //       profile.nodes.push(...(cpuProfileArg.nodes || []));
-  //       profile.samples.push(...(cpuProfileArg.samples || []));
-  //       profile.timeDeltas.push(...(timeDeltas || []));
-  //     }
-
-  //     profiles.set(profile.id, profile);
-  //   }
-
-  //   return Array.from(profiles.values());
-  // }
+    const consumer = await new SourceMapConsumer(rawSourceMap);
+    const events = chromeEvents.map((event: DurationEvent) => {
+      const sm = consumer.originalPositionFor({
+        line: Number(event.args?.data.callFrame.line),
+        column: Number(event.args?.data.callFrame.column),
+      });
+      event.args = {
+        data: {
+          callFrame: {
+            ...event.args?.data.callFrame,
+            sourceMap: sm,
+          },
+        },
+      };
+      return event;
+    });
+    consumer.destroy();
+    return events;
+  }
 }
