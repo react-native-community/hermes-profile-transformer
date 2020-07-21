@@ -12,7 +12,7 @@ export interface SharedEventProperties {
   /**
    * tracing clock timestamp
    */
-  ts: string;
+  ts?: number;
   /**
    * process ID
    */
@@ -20,7 +20,7 @@ export interface SharedEventProperties {
   /**
    * thread ID
    */
-  tid?: string;
+  tid?: number;
   /**
    * event type (phase)
    */
@@ -186,3 +186,74 @@ export type Event =
   | MemoryDumpEvent
   | MarkEvent
   | LinkedIDEvent;
+
+/**
+ * Each item in the stackFrames object of the hermes profile
+ */
+export interface HermesStackFrame {
+  line: string;
+  column: string;
+  funcLine: string;
+  funcColumn: string;
+  name: string;
+  category: string;
+  /**
+   * A parent function may or may not exist
+   */
+  parent?: number;
+}
+/**
+ * Each item in the samples array of the hermes profile
+ */
+export interface HermesSample {
+  cpu: string;
+  name: string;
+  ts: string;
+  pid: number;
+  tid: string;
+  weight: string;
+  /**
+   * Will refer to an element in the stackFrames object of the Hermes Profile
+   */
+  sf: number;
+  stackFrameData?: HermesStackFrame;
+}
+
+/**
+ * Hermes Profile Interface
+ */
+export interface HermesCPUProfile {
+  traceEvents: SharedEventProperties[];
+  samples: HermesSample[];
+  stackFrames: { [key in string]: HermesStackFrame };
+}
+
+export interface CPUProfileChunk {
+  id: string;
+  pid: number;
+  tid: string;
+  startTime: number;
+  nodes: CPUProfileChunkNode[];
+  samples: number[];
+  timeDeltas: number[];
+}
+
+export interface CPUProfileChunkNode {
+  id: number;
+  callFrame: {
+    line: string;
+    column: string;
+    funcLine: string;
+    funcColumn: string;
+    name: string;
+    url?: string;
+    category: string;
+  };
+  parent?: number;
+}
+
+export type CPUProfileChunker = {
+  nodes: CPUProfileChunkNode[];
+  sampleNumbers: number[];
+  timeDeltas: number[];
+};

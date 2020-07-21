@@ -1,0 +1,4539 @@
+{
+    "traceEvents": [
+        {
+            "name": "process_name",
+            "ph": "M",
+            "cat": "__metadata",
+            "pid": 12662,
+            "ts": "11943565354",
+            "tid": "-1",
+            "args": {
+                "name": "hermes"
+            }
+        },
+        {
+            "name": "thread_name",
+            "ph": "M",
+            "cat": "__metadata",
+            "pid": 12662,
+            "ts": "11943565354",
+            "tid": "12707",
+            "args": {
+                "name": "mqt_js"
+            }
+        },
+        {
+            "name": "mqt_js",
+            "cat": "mqt_js",
+            "ph": "X",
+            "dur": 0,
+            "pid": 12662,
+            "ts": "11943565354",
+            "tid": "12707",
+            "args": {}
+        }
+    ],
+    "samples": [
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943565354",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 5
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943566904",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 7
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943568180",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 9
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943569718",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 13
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943571210",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 16
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943572687",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 20
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943575111",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 16
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943576785",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 16
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943579171",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 25
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943580610",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 27
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943581895",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 30
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943583369",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 32
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943584833",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 34
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943586300",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 36
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943587787",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 41
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943589221",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 43
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943590523",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 43
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943593494",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 48
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943596466",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 54
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943599551",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 60
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943601532",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 68
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943604656",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 74
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943606295",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 13
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943615830",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 93
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943624750",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 108
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943626863",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 111
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943630485",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 111
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943636066",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 123
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943637843",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 125
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943639776",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 129
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943641271",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 144
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943644698",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 129
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943652505",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 160
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943655593",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 165
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943761252",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 170
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943764619",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 179
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943766322",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943767790",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 184
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943769143",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 188
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943771379",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943772996",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 160
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943774641",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 190
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943936582",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 195
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943939788",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 129
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943941945",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 200
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943950418",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 200
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943953201",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 200
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943954827",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 204
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943956402",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 160
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11943957809",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 206
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944139763",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 209
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944152804",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 213
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944154100",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 129
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944155679",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 204
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944157163",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 217
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944158548",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 221
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944161845",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 229
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944164986",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944166849",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 160
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944325294",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 237
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944335433",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 241
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944337064",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 243
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944338616",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 204
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944341806",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944349845",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 160
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944351574",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 160
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944502016",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 244
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944520681",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 209
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944523423",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 200
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944524777",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 246
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944527488",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944531265",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 249
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944532881",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 200
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944534408",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 204
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944535891",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 160
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944689115",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 251
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944702523",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 260
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944703348",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 261
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944706751",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 204
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944708531",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 266
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944712679",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944716107",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 160
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944718875",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 273
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944873039",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 274
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944874559",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944878263",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 275
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944882840",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 279
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944884677",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 281
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11944886044",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 200
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945041317",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 283
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945043449",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 249
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945045601",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945049410",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 284
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945051360",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 249
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945052833",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 204
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945054178",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 288
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945055706",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 204
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945224929",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 123
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945229147",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 200
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945233030",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 291
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945234688",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 249
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945237340",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 160
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945401521",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 298
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945403319",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 301
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945404906",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 315
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945406597",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 317
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945418842",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945420479",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945423625",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 204
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945430454",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 321
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945573832",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 129
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945585578",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 200
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945587328",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 200
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945590384",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 200
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945594024",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 160
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945599418",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 323
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945601021",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 330
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945752575",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 338
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945755521",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 213
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945758016",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945764451",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 341
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945766672",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 204
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945768308",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 249
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945769971",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 204
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945772732",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 160
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945939824",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 342
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945941750",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 129
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945949171",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 129
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945951215",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945953625",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945955202",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 345
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945957747",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945963617",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 200
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11945965103",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 347
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946109597",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 249
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946115200",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 353
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946116231",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 356
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946119347",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 129
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946120855",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 249
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946123459",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 363
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946272238",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 213
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946275188",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 369
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946284392",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 370
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946286166",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 183
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946288769",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 200
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946290550",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 371
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946293067",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 129
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946295046",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 129
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946297469",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 160
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11946299161",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 190
+        },
+        {
+            "cpu": "-1",
+            "name": "",
+            "ts": "11947284388",
+            "pid": 12662,
+            "tid": "12707",
+            "weight": "1",
+            "sf": 375
+        }
+    ],
+    "stackFrames": {
+        "1": {
+            "line": "2469",
+            "column": "21",
+            "funcLine": "2466",
+            "funcColumn": "76",
+            "name": "callFunctionReturnFlushedQueue(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2469:21)",
+            "category": "JavaScript"
+        },
+        "2": {
+            "line": "2702",
+            "column": "15",
+            "funcLine": "2697",
+            "funcColumn": "35",
+            "name": "__guard(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2702:15)",
+            "category": "JavaScript",
+            "parent": 1
+        },
+        "3": {
+            "line": "2470",
+            "column": "31",
+            "funcLine": "2469",
+            "funcColumn": "34",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2470:31)",
+            "category": "JavaScript",
+            "parent": 2
+        },
+        "4": {
+            "line": "2748",
+            "column": "49",
+            "funcLine": "2726",
+            "funcColumn": "60",
+            "name": "__callFunction(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2748:49)",
+            "category": "JavaScript",
+            "parent": 3
+        },
+        "5": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 4
+        },
+        "6": {
+            "line": "10638",
+            "column": "34",
+            "funcLine": "10617",
+            "funcColumn": "75",
+            "name": "receiveTouches(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10638:34)",
+            "category": "JavaScript",
+            "parent": 5
+        },
+        "7": {
+            "line": "10595",
+            "column": "84",
+            "funcLine": "10595",
+            "funcColumn": "84",
+            "name": "_receiveRootNodeIDEvent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10595:84)",
+            "category": "JavaScript",
+            "parent": 6
+        },
+        "8": {
+            "line": "10608",
+            "column": "23",
+            "funcLine": "10595",
+            "funcColumn": "84",
+            "name": "_receiveRootNodeIDEvent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10608:23)",
+            "category": "JavaScript",
+            "parent": 6
+        },
+        "9": {
+            "line": "10539",
+            "column": "48",
+            "funcLine": "10539",
+            "funcColumn": "48",
+            "name": "batchedUpdates(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10539:48)",
+            "category": "JavaScript",
+            "parent": 8
+        },
+        "10": {
+            "line": "10547",
+            "column": "36",
+            "funcLine": "10539",
+            "funcColumn": "48",
+            "name": "batchedUpdates(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10547:36)",
+            "category": "JavaScript",
+            "parent": 8
+        },
+        "11": {
+            "line": "22840",
+            "column": "20",
+            "funcLine": "22835",
+            "funcColumn": "40",
+            "name": "batchedUpdates$1(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:22840:20)",
+            "category": "JavaScript",
+            "parent": 10
+        },
+        "12": {
+            "line": "10609",
+            "column": "42",
+            "funcLine": "10608",
+            "funcColumn": "36",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10609:42)",
+            "category": "JavaScript",
+            "parent": 11
+        },
+        "13": {
+            "line": "9567",
+            "column": "124",
+            "funcLine": "9567",
+            "funcColumn": "124",
+            "name": "runExtractedPluginEventsInBatch(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9567:124)",
+            "category": "JavaScript",
+            "parent": 12
+        },
+        "14": {
+            "line": "9568",
+            "column": "41",
+            "funcLine": "9567",
+            "funcColumn": "124",
+            "name": "runExtractedPluginEventsInBatch(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9568:41)",
+            "category": "JavaScript",
+            "parent": 12
+        },
+        "15": {
+            "line": "9556",
+            "column": "63",
+            "funcLine": "9549",
+            "funcColumn": "112",
+            "name": "extractPluginEvents(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9556:63)",
+            "category": "JavaScript",
+            "parent": 14
+        },
+        "16": {
+            "line": "10326",
+            "column": "123",
+            "funcLine": "10326",
+            "funcColumn": "123",
+            "name": "extractEvents(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10326:123)",
+            "category": "JavaScript",
+            "parent": 15
+        },
+        "17": {
+            "line": "10338",
+            "column": "54",
+            "funcLine": "10326",
+            "funcColumn": "123",
+            "name": "extractEvents(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10338:54)",
+            "category": "JavaScript",
+            "parent": 15
+        },
+        "18": {
+            "line": "10110",
+            "column": "47",
+            "funcLine": "10106",
+            "funcColumn": "80",
+            "name": "recordTouchTrack(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10110:47)",
+            "category": "JavaScript",
+            "parent": 17
+        },
+        "19": {
+            "name": "[Native] arrayPrototypeForEach",
+            "category": "Native",
+            "parent": 18
+        },
+        "20": {
+            "line": "10039",
+            "column": "40",
+            "funcLine": "10039",
+            "funcColumn": "40",
+            "name": "recordTouchStart(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10039:40)",
+            "category": "JavaScript",
+            "parent": 19
+        },
+        "21": {
+            "line": "10339",
+            "column": "117",
+            "funcLine": "10326",
+            "funcColumn": "123",
+            "name": "extractEvents(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10339:117)",
+            "category": "JavaScript",
+            "parent": 15
+        },
+        "22": {
+            "line": "10245",
+            "column": "39",
+            "funcLine": "10235",
+            "funcColumn": "105",
+            "name": "setResponderAndExtractTransfer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10245:39)",
+            "category": "JavaScript",
+            "parent": 21
+        },
+        "23": {
+            "line": "9729",
+            "column": "27",
+            "funcLine": "9728",
+            "funcColumn": "53",
+            "name": "accumulateTwoPhaseDispatches(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9729:27)",
+            "category": "JavaScript",
+            "parent": 22
+        },
+        "24": {
+            "line": "9453",
+            "column": "18",
+            "funcLine": "9449",
+            "funcColumn": "51",
+            "name": "forEachAccumulated(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9453:18)",
+            "category": "JavaScript",
+            "parent": 23
+        },
+        "25": {
+            "name": "[Native] functionPrototypeCall",
+            "category": "Native",
+            "parent": 24
+        },
+        "26": {
+            "line": "9698",
+            "column": "27",
+            "funcLine": "9696",
+            "funcColumn": "58",
+            "name": "accumulateTwoPhaseDispatchesSingle(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9698:27)",
+            "category": "JavaScript",
+            "parent": 25
+        },
+        "27": {
+            "line": "9660",
+            "column": "48",
+            "funcLine": "9660",
+            "funcColumn": "48",
+            "name": "traverseTwoPhase(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9660:48)",
+            "category": "JavaScript",
+            "parent": 26
+        },
+        "28": {
+            "line": "9671",
+            "column": "13",
+            "funcLine": "9660",
+            "funcColumn": "48",
+            "name": "traverseTwoPhase(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9671:13)",
+            "category": "JavaScript",
+            "parent": 26
+        },
+        "29": {
+            "line": "9688",
+            "column": "39",
+            "funcLine": "9684",
+            "funcColumn": "68",
+            "name": "accumulateDirectionalDispatches(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9688:39)",
+            "category": "JavaScript",
+            "parent": 28
+        },
+        "30": {
+            "line": "9679",
+            "column": "63",
+            "funcLine": "9679",
+            "funcColumn": "63",
+            "name": "listenerAtPhase(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9679:63)",
+            "category": "JavaScript",
+            "parent": 29
+        },
+        "31": {
+            "line": "9675",
+            "column": "13",
+            "funcLine": "9660",
+            "funcColumn": "48",
+            "name": "traverseTwoPhase(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9675:13)",
+            "category": "JavaScript",
+            "parent": 26
+        },
+        "32": {
+            "line": "9684",
+            "column": "68",
+            "funcLine": "9684",
+            "funcColumn": "68",
+            "name": "accumulateDirectionalDispatches(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9684:68)",
+            "category": "JavaScript",
+            "parent": 31
+        },
+        "33": {
+            "line": "10248",
+            "column": "68",
+            "funcLine": "10235",
+            "funcColumn": "105",
+            "name": "setResponderAndExtractTransfer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10248:68)",
+            "category": "JavaScript",
+            "parent": 21
+        },
+        "34": {
+            "line": "9393",
+            "column": "58",
+            "funcLine": "9393",
+            "funcColumn": "58",
+            "name": "executeDispatchesInOrderStopAtTrue(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9393:58)",
+            "category": "JavaScript",
+            "parent": 33
+        },
+        "35": {
+            "line": "10251",
+            "column": "45",
+            "funcLine": "10235",
+            "funcColumn": "105",
+            "name": "setResponderAndExtractTransfer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10251:45)",
+            "category": "JavaScript",
+            "parent": 21
+        },
+        "36": {
+            "line": "9938",
+            "column": "42",
+            "funcLine": "9938",
+            "funcColumn": "42",
+            "name": "releasePooledEvent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9938:42)",
+            "category": "JavaScript",
+            "parent": 35
+        },
+        "37": {
+            "line": "10261",
+            "column": "35",
+            "funcLine": "10235",
+            "funcColumn": "105",
+            "name": "setResponderAndExtractTransfer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10261:35)",
+            "category": "JavaScript",
+            "parent": 21
+        },
+        "38": {
+            "line": "9737",
+            "column": "27",
+            "funcLine": "9736",
+            "funcColumn": "51",
+            "name": "accumulateDirectDispatches(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9737:27)",
+            "category": "JavaScript",
+            "parent": 37
+        },
+        "39": {
+            "line": "9453",
+            "column": "18",
+            "funcLine": "9449",
+            "funcColumn": "51",
+            "name": "forEachAccumulated(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9453:18)",
+            "category": "JavaScript",
+            "parent": 38
+        },
+        "40": {
+            "name": "[Native] functionPrototypeCall",
+            "category": "Native",
+            "parent": 39
+        },
+        "41": {
+            "line": "9722",
+            "column": "56",
+            "funcLine": "9722",
+            "funcColumn": "56",
+            "name": "accumulateDirectDispatchesSingle(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9722:56)",
+            "category": "JavaScript",
+            "parent": 40
+        },
+        "42": {
+            "line": "10262",
+            "column": "55",
+            "funcLine": "10235",
+            "funcColumn": "105",
+            "name": "setResponderAndExtractTransfer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10262:55)",
+            "category": "JavaScript",
+            "parent": 21
+        },
+        "43": {
+            "line": "9400",
+            "column": "45",
+            "funcLine": "9400",
+            "funcColumn": "45",
+            "name": "executeDirectDispatch(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9400:45)",
+            "category": "JavaScript",
+            "parent": 42
+        },
+        "44": {
+            "line": "9412",
+            "column": "54",
+            "funcLine": "9400",
+            "funcColumn": "45",
+            "name": "executeDirectDispatch(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9412:54)",
+            "category": "JavaScript",
+            "parent": 42
+        },
+        "45": {
+            "line": "56406",
+            "column": "36",
+            "funcLine": "56386",
+            "funcColumn": "62",
+            "name": "onResponderGrant(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56406:36)",
+            "category": "JavaScript",
+            "parent": 44
+        },
+        "46": {
+            "line": "56535",
+            "column": "45",
+            "funcLine": "56522",
+            "funcColumn": "53",
+            "name": "_receiveSignal(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56535:45)",
+            "category": "JavaScript",
+            "parent": 45
+        },
+        "47": {
+            "line": "56568",
+            "column": "25",
+            "funcLine": "56542",
+            "funcColumn": "90",
+            "name": "_performTransitionSideEffects(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56568:25)",
+            "category": "JavaScript",
+            "parent": 46
+        },
+        "48": {
+            "line": "56606",
+            "column": "40",
+            "funcLine": "56606",
+            "funcColumn": "40",
+            "name": "_activate(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56606:40)",
+            "category": "JavaScript",
+            "parent": 47
+        },
+        "49": {
+            "line": "56615",
+            "column": "20",
+            "funcLine": "56606",
+            "funcColumn": "40",
+            "name": "_activate(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56615:20)",
+            "category": "JavaScript",
+            "parent": 47
+        },
+        "50": {
+            "line": "55978",
+            "column": "48",
+            "funcLine": "55976",
+            "funcColumn": "48",
+            "name": "onPressIn(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:55978:48)",
+            "category": "JavaScript",
+            "parent": 49
+        },
+        "51": {
+            "line": "56016",
+            "column": "82",
+            "funcLine": "56014",
+            "funcColumn": "60",
+            "name": "_dispatchPressedStateChange(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56016:82)",
+            "category": "JavaScript",
+            "parent": 50
+        },
+        "52": {
+            "line": "25606",
+            "column": "53",
+            "funcLine": "25582",
+            "funcColumn": "63",
+            "name": "findHostInstance_DEPRECATED(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:25606:53)",
+            "category": "JavaScript",
+            "parent": 51
+        },
+        "53": {
+            "line": "25015",
+            "column": "47",
+            "funcLine": "24999",
+            "funcColumn": "67",
+            "name": "findHostInstanceWithWarning(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:25015:47)",
+            "category": "JavaScript",
+            "parent": 52
+        },
+        "54": {
+            "line": "11052",
+            "column": "45",
+            "funcLine": "11052",
+            "funcColumn": "45",
+            "name": "findCurrentHostFiber(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:11052:45)",
+            "category": "JavaScript",
+            "parent": 53
+        },
+        "55": {
+            "line": "56021",
+            "column": "53",
+            "funcLine": "56014",
+            "funcColumn": "60",
+            "name": "_dispatchPressedStateChange(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56021:53)",
+            "category": "JavaScript",
+            "parent": 50
+        },
+        "56": {
+            "line": "8979",
+            "column": "42",
+            "funcLine": "8974",
+            "funcColumn": "44",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:8979:42)",
+            "category": "JavaScript",
+            "parent": 55
+        },
+        "57": {
+            "line": "25685",
+            "column": "75",
+            "funcLine": "25679",
+            "funcColumn": "74",
+            "name": "dispatchCommand(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:25685:75)",
+            "category": "JavaScript",
+            "parent": 56
+        },
+        "58": {
+            "line": "2242",
+            "column": "42",
+            "funcLine": "2224",
+            "funcColumn": "47",
+            "name": "nonPromiseMethodWrapper(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2242:42)",
+            "category": "JavaScript",
+            "parent": 57
+        },
+        "59": {
+            "line": "2661",
+            "column": "43",
+            "funcLine": "2601",
+            "funcColumn": "85",
+            "name": "enqueueNativeCall(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2661:43)",
+            "category": "JavaScript",
+            "parent": 58
+        },
+        "60": {
+            "name": "[HostFunction]",
+            "category": "Native",
+            "parent": 59
+        },
+        "61": {
+            "line": "56410",
+            "column": "55",
+            "funcLine": "56386",
+            "funcColumn": "62",
+            "name": "onResponderGrant(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56410:55)",
+            "category": "JavaScript",
+            "parent": 44
+        },
+        "62": {
+            "line": "32485",
+            "column": "18",
+            "funcLine": "32472",
+            "funcColumn": "53",
+            "name": "setTimeout(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:32485:18)",
+            "category": "JavaScript",
+            "parent": 61
+        },
+        "63": {
+            "line": "32677",
+            "column": "38",
+            "funcLine": "32674",
+            "funcColumn": "73",
+            "name": "createTimer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:32677:38)",
+            "category": "JavaScript",
+            "parent": 62
+        },
+        "64": {
+            "line": "2242",
+            "column": "42",
+            "funcLine": "2224",
+            "funcColumn": "47",
+            "name": "nonPromiseMethodWrapper(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2242:42)",
+            "category": "JavaScript",
+            "parent": 63
+        },
+        "65": {
+            "line": "2650",
+            "column": "44",
+            "funcLine": "2601",
+            "funcColumn": "85",
+            "name": "enqueueNativeCall(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2650:44)",
+            "category": "JavaScript",
+            "parent": 64
+        },
+        "66": {
+            "line": "3029",
+            "column": "33",
+            "funcLine": "3017",
+            "funcColumn": "54",
+            "name": "deepFreezeAndThrowOnMutationInDev(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:3029:33)",
+            "category": "JavaScript",
+            "parent": 65
+        },
+        "67": {
+            "name": "[Native] functionPrototypeCall",
+            "category": "Native",
+            "parent": 66
+        },
+        "68": {
+            "name": "[Native] objectPrototypeHasOwnProperty",
+            "category": "Native",
+            "parent": 67
+        },
+        "69": {
+            "line": "10288",
+            "column": "26",
+            "funcLine": "10235",
+            "funcColumn": "105",
+            "name": "setResponderAndExtractTransfer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10288:26)",
+            "category": "JavaScript",
+            "parent": 21
+        },
+        "70": {
+            "line": "10168",
+            "column": "63",
+            "funcLine": "10163",
+            "funcColumn": "93",
+            "name": "changeResponder(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10168:63)",
+            "category": "JavaScript",
+            "parent": 69
+        },
+        "71": {
+            "line": "10646",
+            "column": "65",
+            "funcLine": "10643",
+            "funcColumn": "69",
+            "name": "onChange(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10646:65)",
+            "category": "JavaScript",
+            "parent": 70
+        },
+        "72": {
+            "line": "2242",
+            "column": "42",
+            "funcLine": "2224",
+            "funcColumn": "47",
+            "name": "nonPromiseMethodWrapper(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2242:42)",
+            "category": "JavaScript",
+            "parent": 71
+        },
+        "73": {
+            "line": "2661",
+            "column": "43",
+            "funcLine": "2601",
+            "funcColumn": "85",
+            "name": "enqueueNativeCall(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2661:43)",
+            "category": "JavaScript",
+            "parent": 72
+        },
+        "74": {
+            "name": "[HostFunction]",
+            "category": "Native",
+            "parent": 73
+        },
+        "75": {
+            "line": "9569",
+            "column": "25",
+            "funcLine": "9567",
+            "funcColumn": "124",
+            "name": "runExtractedPluginEventsInBatch(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9569:25)",
+            "category": "JavaScript",
+            "parent": 12
+        },
+        "76": {
+            "line": "9485",
+            "column": "27",
+            "funcLine": "9473",
+            "funcColumn": "41",
+            "name": "runEventsInBatch(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9485:27)",
+            "category": "JavaScript",
+            "parent": 75
+        },
+        "77": {
+            "line": "9451",
+            "column": "22",
+            "funcLine": "9449",
+            "funcColumn": "51",
+            "name": "forEachAccumulated(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9451:22)",
+            "category": "JavaScript",
+            "parent": 76
+        },
+        "78": {
+            "name": "[Native] arrayPrototypeForEach",
+            "category": "Native",
+            "parent": 77
+        },
+        "79": {
+            "line": "9470",
+            "column": "43",
+            "funcLine": "9469",
+            "funcColumn": "97",
+            "name": "executeDispatchesAndReleaseTopLevel(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9470:43)",
+            "category": "JavaScript",
+            "parent": 78
+        },
+        "80": {
+            "line": "9461",
+            "column": "35",
+            "funcLine": "9459",
+            "funcColumn": "85",
+            "name": "executeDispatchesAndRelease(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9461:35)",
+            "category": "JavaScript",
+            "parent": 79
+        },
+        "81": {
+            "line": "9360",
+            "column": "26",
+            "funcLine": "9344",
+            "funcColumn": "48",
+            "name": "executeDispatchesInOrder(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9360:26)",
+            "category": "JavaScript",
+            "parent": 80
+        },
+        "82": {
+            "line": "9340",
+            "column": "48",
+            "funcLine": "9337",
+            "funcColumn": "55",
+            "name": "executeDispatch(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9340:48)",
+            "category": "JavaScript",
+            "parent": 81
+        },
+        "83": {
+            "line": "9235",
+            "column": "36",
+            "funcLine": "9234",
+            "funcColumn": "95",
+            "name": "invokeGuardedCallbackAndCatchFirstError(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9235:36)",
+            "category": "JavaScript",
+            "parent": 82
+        },
+        "84": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 83
+        },
+        "85": {
+            "line": "9231",
+            "column": "42",
+            "funcLine": "9228",
+            "funcColumn": "77",
+            "name": "invokeGuardedCallback(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9231:42)",
+            "category": "JavaScript",
+            "parent": 84
+        },
+        "86": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 85
+        },
+        "87": {
+            "line": "9137",
+            "column": "21",
+            "funcLine": "9133",
+            "funcColumn": "113",
+            "name": "invokeGuardedCallbackImpl(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9137:21)",
+            "category": "JavaScript",
+            "parent": 86
+        },
+        "88": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 87
+        },
+        "89": {
+            "line": "56453",
+            "column": "34",
+            "funcLine": "56452",
+            "funcColumn": "66",
+            "name": "onResponderRelease(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56453:34)",
+            "category": "JavaScript",
+            "parent": 88
+        },
+        "90": {
+            "line": "56535",
+            "column": "45",
+            "funcLine": "56522",
+            "funcColumn": "53",
+            "name": "_receiveSignal(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56535:45)",
+            "category": "JavaScript",
+            "parent": 89
+        },
+        "91": {
+            "line": "56546",
+            "column": "44",
+            "funcLine": "56542",
+            "funcColumn": "90",
+            "name": "_performTransitionSideEffects(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56546:44)",
+            "category": "JavaScript",
+            "parent": 90
+        },
+        "92": {
+            "line": "56719",
+            "column": "23",
+            "funcLine": "56717",
+            "funcColumn": "54",
+            "name": "_cancelLongPressDelayTimeout(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56719:23)",
+            "category": "JavaScript",
+            "parent": 91
+        },
+        "93": {
+            "line": "32583",
+            "column": "50",
+            "funcLine": "32583",
+            "funcColumn": "50",
+            "name": "clearTimeout(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:32583:50)",
+            "category": "JavaScript",
+            "parent": 92
+        },
+        "94": {
+            "line": "22845",
+            "column": "35",
+            "funcLine": "22835",
+            "funcColumn": "40",
+            "name": "batchedUpdates$1(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:22845:35)",
+            "category": "JavaScript",
+            "parent": 10
+        },
+        "95": {
+            "line": "12685",
+            "column": "35",
+            "funcLine": "12678",
+            "funcColumn": "41",
+            "name": "flushSyncCallbackQueue(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:12685:35)",
+            "category": "JavaScript",
+            "parent": 94
+        },
+        "96": {
+            "line": "12696",
+            "column": "28",
+            "funcLine": "12688",
+            "funcColumn": "45",
+            "name": "flushSyncCallbackQueueImpl(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:12696:28)",
+            "category": "JavaScript",
+            "parent": 95
+        },
+        "97": {
+            "line": "12653",
+            "column": "41",
+            "funcLine": "12651",
+            "funcColumn": "56",
+            "name": "runWithPriority(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:12653:41)",
+            "category": "JavaScript",
+            "parent": 96
+        },
+        "98": {
+            "line": "47555",
+            "column": "30",
+            "funcLine": "47538",
+            "funcColumn": "70",
+            "name": "unstable_runWithPriority(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:47555:30)",
+            "category": "JavaScript",
+            "parent": 97
+        },
+        "99": {
+            "line": "12701",
+            "column": "38",
+            "funcLine": "12696",
+            "funcColumn": "60",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:12701:38)",
+            "category": "JavaScript",
+            "parent": 98
+        },
+        "100": {
+            "line": "22754",
+            "column": "29",
+            "funcLine": "22727",
+            "funcColumn": "44",
+            "name": "performSyncWorkOnRoot(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:22754:29)",
+            "category": "JavaScript",
+            "parent": 99
+        },
+        "101": {
+            "line": "23059",
+            "column": "45",
+            "funcLine": "23057",
+            "funcColumn": "31",
+            "name": "workLoopSync(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:23059:45)",
+            "category": "JavaScript",
+            "parent": 100
+        },
+        "102": {
+            "line": "23077",
+            "column": "30",
+            "funcLine": "23069",
+            "funcColumn": "46",
+            "name": "performUnitOfWork(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:23077:30)",
+            "category": "JavaScript",
+            "parent": 101
+        },
+        "103": {
+            "line": "23928",
+            "column": "31",
+            "funcLine": "23924",
+            "funcColumn": "86",
+            "name": "beginWork$$1(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:23928:31)",
+            "category": "JavaScript",
+            "parent": 102
+        },
+        "104": {
+            "line": "19374",
+            "column": "45",
+            "funcLine": "19211",
+            "funcColumn": "78",
+            "name": "beginWork$1(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:19374:45)",
+            "category": "JavaScript",
+            "parent": 103
+        },
+        "105": {
+            "line": "17956",
+            "column": "41",
+            "funcLine": "17934",
+            "funcColumn": "112",
+            "name": "updateFunctionComponent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:17956:41)",
+            "category": "JavaScript",
+            "parent": 104
+        },
+        "106": {
+            "line": "16110",
+            "column": "33",
+            "funcLine": "16092",
+            "funcColumn": "115",
+            "name": "renderWithHooks(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:16110:33)",
+            "category": "JavaScript",
+            "parent": 105
+        },
+        "107": {
+            "line": "104515",
+            "column": "41",
+            "funcLine": "104512",
+            "funcColumn": "28",
+            "name": "App(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:104515:41)",
+            "category": "JavaScript",
+            "parent": 106
+        },
+        "108": {
+            "line": "5700",
+            "column": "39",
+            "funcLine": "5700",
+            "funcColumn": "39",
+            "name": "useState(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5700:39)",
+            "category": "JavaScript",
+            "parent": 107
+        },
+        "109": {
+            "line": "5702",
+            "column": "35",
+            "funcLine": "5700",
+            "funcColumn": "39",
+            "name": "useState(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5702:35)",
+            "category": "JavaScript",
+            "parent": 107
+        },
+        "110": {
+            "line": "17093",
+            "column": "33",
+            "funcLine": "17086",
+            "funcColumn": "53",
+            "name": "useState(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:17093:33)",
+            "category": "JavaScript",
+            "parent": 109
+        },
+        "111": {
+            "line": "16414",
+            "column": "42",
+            "funcLine": "16414",
+            "funcColumn": "42",
+            "name": "updateState(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:16414:42)",
+            "category": "JavaScript",
+            "parent": 110
+        },
+        "112": {
+            "line": "104602",
+            "column": "36",
+            "funcLine": "104594",
+            "funcColumn": "39",
+            "name": "Header(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:104602:36)",
+            "category": "JavaScript",
+            "parent": 106
+        },
+        "113": {
+            "line": "6078",
+            "column": "28",
+            "funcLine": "6029",
+            "funcColumn": "67",
+            "name": "createElementWithValidation(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6078:28)",
+            "category": "JavaScript",
+            "parent": 112
+        },
+        "114": {
+            "line": "5914",
+            "column": "25",
+            "funcLine": "5894",
+            "funcColumn": "43",
+            "name": "validatePropTypes(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5914:25)",
+            "category": "JavaScript",
+            "parent": 113
+        },
+        "115": {
+            "line": "6298",
+            "column": "44",
+            "funcLine": "6285",
+            "funcColumn": "81",
+            "name": "checkPropTypes(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6298:44)",
+            "category": "JavaScript",
+            "parent": 114
+        },
+        "116": {
+            "line": "54901",
+            "column": "33",
+            "funcLine": "54889",
+            "funcColumn": "64",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:33)",
+            "category": "JavaScript",
+            "parent": 115
+        },
+        "117": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 116
+        },
+        "118": {
+            "line": "54962",
+            "column": "29",
+            "funcLine": "54957",
+            "funcColumn": "73",
+            "name": "chainedCheckType(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54962:29)",
+            "category": "JavaScript",
+            "parent": 117
+        },
+        "119": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 118
+        },
+        "120": {
+            "line": "54936",
+            "column": "34",
+            "funcLine": "54919",
+            "funcColumn": "78",
+            "name": "checkType(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54936:34)",
+            "category": "JavaScript",
+            "parent": 119
+        },
+        "121": {
+            "line": "54914",
+            "column": "186",
+            "funcLine": "54914",
+            "funcColumn": "34",
+            "name": "_objectSpread(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:186)",
+            "category": "JavaScript",
+            "parent": 120
+        },
+        "122": {
+            "name": "[Native] arrayPrototypeForEach",
+            "category": "Native",
+            "parent": 121
+        },
+        "123": {
+            "line": "54914",
+            "column": "202",
+            "funcLine": "54914",
+            "funcColumn": "202",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:202)",
+            "category": "JavaScript",
+            "parent": 122
+        },
+        "124": {
+            "line": "19422",
+            "column": "41",
+            "funcLine": "19211",
+            "funcColumn": "78",
+            "name": "beginWork$1(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:19422:41)",
+            "category": "JavaScript",
+            "parent": 103
+        },
+        "125": {
+            "line": "19039",
+            "column": "88",
+            "funcLine": "19039",
+            "funcColumn": "88",
+            "name": "updateContextProvider(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:19039:88)",
+            "category": "JavaScript",
+            "parent": 124
+        },
+        "126": {
+            "line": "23076",
+            "column": "29",
+            "funcLine": "23069",
+            "funcColumn": "46",
+            "name": "performUnitOfWork(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:23076:29)",
+            "category": "JavaScript",
+            "parent": 101
+        },
+        "127": {
+            "line": "17354",
+            "column": "40",
+            "funcLine": "17346",
+            "funcColumn": "42",
+            "name": "startProfilerTimer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:17354:40)",
+            "category": "JavaScript",
+            "parent": 126
+        },
+        "128": {
+            "line": "46900",
+            "column": "26",
+            "funcLine": "46899",
+            "funcColumn": "44",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46900:26)",
+            "category": "JavaScript",
+            "parent": 127
+        },
+        "129": {
+            "name": "[Native] dateNow",
+            "category": "Native",
+            "parent": 128
+        },
+        "130": {
+            "line": "19384",
+            "column": "42",
+            "funcLine": "19211",
+            "funcColumn": "78",
+            "name": "beginWork$1(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:19384:42)",
+            "category": "JavaScript",
+            "parent": 103
+        },
+        "131": {
+            "line": "18016",
+            "column": "50",
+            "funcLine": "17977",
+            "funcColumn": "109",
+            "name": "updateClassComponent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:18016:50)",
+            "category": "JavaScript",
+            "parent": 130
+        },
+        "132": {
+            "line": "18053",
+            "column": "43",
+            "funcLine": "18028",
+            "funcColumn": "124",
+            "name": "finishClassComponent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:18053:43)",
+            "category": "JavaScript",
+            "parent": 131
+        },
+        "133": {
+            "line": "54471",
+            "column": "31",
+            "funcLine": "54404",
+            "funcColumn": "32",
+            "name": "render(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54471:31)",
+            "category": "JavaScript",
+            "parent": 132
+        },
+        "134": {
+            "line": "6078",
+            "column": "28",
+            "funcLine": "6029",
+            "funcColumn": "67",
+            "name": "createElementWithValidation(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6078:28)",
+            "category": "JavaScript",
+            "parent": 133
+        },
+        "135": {
+            "line": "5914",
+            "column": "25",
+            "funcLine": "5894",
+            "funcColumn": "43",
+            "name": "validatePropTypes(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5914:25)",
+            "category": "JavaScript",
+            "parent": 134
+        },
+        "136": {
+            "line": "6298",
+            "column": "44",
+            "funcLine": "6285",
+            "funcColumn": "81",
+            "name": "checkPropTypes(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6298:44)",
+            "category": "JavaScript",
+            "parent": 135
+        },
+        "137": {
+            "line": "54901",
+            "column": "33",
+            "funcLine": "54889",
+            "funcColumn": "64",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:33)",
+            "category": "JavaScript",
+            "parent": 136
+        },
+        "138": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 137
+        },
+        "139": {
+            "line": "54962",
+            "column": "29",
+            "funcLine": "54957",
+            "funcColumn": "73",
+            "name": "chainedCheckType(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54962:29)",
+            "category": "JavaScript",
+            "parent": 138
+        },
+        "140": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 139
+        },
+        "141": {
+            "line": "54936",
+            "column": "34",
+            "funcLine": "54919",
+            "funcColumn": "78",
+            "name": "checkType(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54936:34)",
+            "category": "JavaScript",
+            "parent": 140
+        },
+        "142": {
+            "line": "54914",
+            "column": "156",
+            "funcLine": "54914",
+            "funcColumn": "34",
+            "name": "_objectSpread(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:156)",
+            "category": "JavaScript",
+            "parent": 141
+        },
+        "143": {
+            "line": "54912",
+            "column": "68",
+            "funcLine": "54912",
+            "funcColumn": "44",
+            "name": "ownKeys(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54912:68)",
+            "category": "JavaScript",
+            "parent": 142
+        },
+        "144": {
+            "name": "[Native] objectKeys",
+            "category": "Native",
+            "parent": 143
+        },
+        "145": {
+            "line": "22786",
+            "column": "31",
+            "funcLine": "22727",
+            "funcColumn": "44",
+            "name": "performSyncWorkOnRoot(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:22786:31)",
+            "category": "JavaScript",
+            "parent": 99
+        },
+        "146": {
+            "line": "22803",
+            "column": "19",
+            "funcLine": "22796",
+            "funcColumn": "67",
+            "name": "finishSyncRender(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:22803:19)",
+            "category": "JavaScript",
+            "parent": 145
+        },
+        "147": {
+            "line": "23257",
+            "column": "24",
+            "funcLine": "23255",
+            "funcColumn": "33",
+            "name": "commitRoot(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:23257:24)",
+            "category": "JavaScript",
+            "parent": 146
+        },
+        "148": {
+            "line": "12653",
+            "column": "41",
+            "funcLine": "12651",
+            "funcColumn": "56",
+            "name": "runWithPriority(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:12653:41)",
+            "category": "JavaScript",
+            "parent": 147
+        },
+        "149": {
+            "line": "47555",
+            "column": "30",
+            "funcLine": "47538",
+            "funcColumn": "70",
+            "name": "unstable_runWithPriority(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:47555:30)",
+            "category": "JavaScript",
+            "parent": 148
+        },
+        "150": {
+            "line": "23346",
+            "column": "36",
+            "funcLine": "23261",
+            "funcColumn": "58",
+            "name": "commitRootImpl(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:23346:36)",
+            "category": "JavaScript",
+            "parent": 149
+        },
+        "151": {
+            "line": "9231",
+            "column": "42",
+            "funcLine": "9228",
+            "funcColumn": "77",
+            "name": "invokeGuardedCallback(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9231:42)",
+            "category": "JavaScript",
+            "parent": 150
+        },
+        "152": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 151
+        },
+        "153": {
+            "line": "9137",
+            "column": "21",
+            "funcLine": "9133",
+            "funcColumn": "113",
+            "name": "invokeGuardedCallbackImpl(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9137:21)",
+            "category": "JavaScript",
+            "parent": 152
+        },
+        "154": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 153
+        },
+        "155": {
+            "line": "23559",
+            "column": "27",
+            "funcLine": "23506",
+            "funcColumn": "65",
+            "name": "commitMutationEffects(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:23559:27)",
+            "category": "JavaScript",
+            "parent": 154
+        },
+        "156": {
+            "line": "21827",
+            "column": "31",
+            "funcLine": "21726",
+            "funcColumn": "53",
+            "name": "commitWork(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:21827:31)",
+            "category": "JavaScript",
+            "parent": 155
+        },
+        "157": {
+            "line": "11652",
+            "column": "57",
+            "funcLine": "11651",
+            "funcColumn": "65",
+            "name": "commitTextUpdate(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:11652:57)",
+            "category": "JavaScript",
+            "parent": 156
+        },
+        "158": {
+            "line": "2242",
+            "column": "42",
+            "funcLine": "2224",
+            "funcColumn": "47",
+            "name": "nonPromiseMethodWrapper(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2242:42)",
+            "category": "JavaScript",
+            "parent": 157
+        },
+        "159": {
+            "line": "2661",
+            "column": "43",
+            "funcLine": "2601",
+            "funcColumn": "85",
+            "name": "enqueueNativeCall(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2661:43)",
+            "category": "JavaScript",
+            "parent": 158
+        },
+        "160": {
+            "name": "[HostFunction]",
+            "category": "Native",
+            "parent": 159
+        },
+        "161": {
+            "line": "2493",
+            "column": "21",
+            "funcLine": "2490",
+            "funcColumn": "71",
+            "name": "invokeCallbackAndReturnFlushedQueue(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2493:21)",
+            "category": "JavaScript"
+        },
+        "162": {
+            "line": "2702",
+            "column": "15",
+            "funcLine": "2697",
+            "funcColumn": "35",
+            "name": "__guard(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2702:15)",
+            "category": "JavaScript",
+            "parent": 161
+        },
+        "163": {
+            "line": "2494",
+            "column": "34",
+            "funcLine": "2493",
+            "funcColumn": "34",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2494:34)",
+            "category": "JavaScript",
+            "parent": 162
+        },
+        "164": {
+            "line": "2790",
+            "column": "23",
+            "funcLine": "2754",
+            "funcColumn": "52",
+            "name": "__invokeCallback(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2790:23)",
+            "category": "JavaScript",
+            "parent": 163
+        },
+        "165": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 164
+        },
+        "166": {
+            "line": "104561",
+            "column": "37",
+            "funcLine": "104512",
+            "funcColumn": "28",
+            "name": "App(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:104561:37)",
+            "category": "JavaScript",
+            "parent": 106
+        },
+        "167": {
+            "line": "6078",
+            "column": "28",
+            "funcLine": "6029",
+            "funcColumn": "67",
+            "name": "createElementWithValidation(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6078:28)",
+            "category": "JavaScript",
+            "parent": 166
+        },
+        "168": {
+            "line": "5914",
+            "column": "25",
+            "funcLine": "5894",
+            "funcColumn": "43",
+            "name": "validatePropTypes(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5914:25)",
+            "category": "JavaScript",
+            "parent": 167
+        },
+        "169": {
+            "line": "6298",
+            "column": "44",
+            "funcLine": "6285",
+            "funcColumn": "81",
+            "name": "checkPropTypes(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6298:44)",
+            "category": "JavaScript",
+            "parent": 168
+        },
+        "170": {
+            "line": "7509",
+            "column": "102",
+            "funcLine": "7509",
+            "funcColumn": "102",
+            "name": "checkType(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:7509:102)",
+            "category": "JavaScript",
+            "parent": 169
+        },
+        "171": {
+            "line": "19391",
+            "column": "39",
+            "funcLine": "19211",
+            "funcColumn": "78",
+            "name": "beginWork$1(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:19391:39)",
+            "category": "JavaScript",
+            "parent": 103
+        },
+        "172": {
+            "line": "18161",
+            "column": "26",
+            "funcLine": "18131",
+            "funcColumn": "86",
+            "name": "updateHostComponent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:18161:26)",
+            "category": "JavaScript",
+            "parent": 171
+        },
+        "173": {
+            "line": "17765",
+            "column": "54",
+            "funcLine": "17761",
+            "funcColumn": "98",
+            "name": "reconcileChildren(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:17765:54)",
+            "category": "JavaScript",
+            "parent": 172
+        },
+        "174": {
+            "line": "15575",
+            "column": "42",
+            "funcLine": "15551",
+            "funcColumn": "97",
+            "name": "reconcileChildFibers(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:15575:42)",
+            "category": "JavaScript",
+            "parent": 173
+        },
+        "175": {
+            "line": "15241",
+            "column": "38",
+            "funcLine": "15217",
+            "funcColumn": "102",
+            "name": "reconcileChildrenArray(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:15241:38)",
+            "category": "JavaScript",
+            "parent": 174
+        },
+        "176": {
+            "line": "15101",
+            "column": "41",
+            "funcLine": "15081",
+            "funcColumn": "78",
+            "name": "updateSlot(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:15101:41)",
+            "category": "JavaScript",
+            "parent": 175
+        },
+        "177": {
+            "line": "14996",
+            "column": "36",
+            "funcLine": "14994",
+            "funcColumn": "82",
+            "name": "updateElement(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:14996:36)",
+            "category": "JavaScript",
+            "parent": 176
+        },
+        "178": {
+            "line": "14944",
+            "column": "43",
+            "funcLine": "14943",
+            "funcColumn": "64",
+            "name": "useFiber(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:14944:43)",
+            "category": "JavaScript",
+            "parent": 177
+        },
+        "179": {
+            "line": "24433",
+            "column": "76",
+            "funcLine": "24433",
+            "funcColumn": "76",
+            "name": "createWorkInProgress(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:24433:76)",
+            "category": "JavaScript",
+            "parent": 178
+        },
+        "180": {
+            "line": "23078",
+            "column": "51",
+            "funcLine": "23069",
+            "funcColumn": "46",
+            "name": "performUnitOfWork(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:23078:51)",
+            "category": "JavaScript",
+            "parent": 101
+        },
+        "181": {
+            "line": "17372",
+            "column": "34",
+            "funcLine": "17366",
+            "funcColumn": "82",
+            "name": "stopProfilerTimerIfRunningAndRecordDelta(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:17372:34)",
+            "category": "JavaScript",
+            "parent": 180
+        },
+        "182": {
+            "line": "46900",
+            "column": "26",
+            "funcLine": "46899",
+            "funcColumn": "44",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46900:26)",
+            "category": "JavaScript",
+            "parent": 181
+        },
+        "183": {
+            "name": "[Native] dateNow",
+            "category": "Native",
+            "parent": 182
+        },
+        "184": {
+            "line": "17761",
+            "column": "98",
+            "funcLine": "17761",
+            "funcColumn": "98",
+            "name": "reconcileChildren(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:17761:98)",
+            "category": "JavaScript",
+            "parent": 172
+        },
+        "185": {
+            "line": "18013",
+            "column": "45",
+            "funcLine": "17977",
+            "funcColumn": "109",
+            "name": "updateClassComponent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:18013:45)",
+            "category": "JavaScript",
+            "parent": 130
+        },
+        "186": {
+            "line": "14663",
+            "column": "55",
+            "funcLine": "14652",
+            "funcColumn": "99",
+            "name": "updateClassInstance(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:14663:55)",
+            "category": "JavaScript",
+            "parent": 185
+        },
+        "187": {
+            "line": "12345",
+            "column": "63",
+            "funcLine": "12341",
+            "funcColumn": "91",
+            "name": "getUnmaskedContext(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:12345:63)",
+            "category": "JavaScript",
+            "parent": 186
+        },
+        "188": {
+            "line": "12407",
+            "column": "40",
+            "funcLine": "12407",
+            "funcColumn": "40",
+            "name": "isContextProvider(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:12407:40)",
+            "category": "JavaScript",
+            "parent": 187
+        },
+        "189": {
+            "line": "2650",
+            "column": "44",
+            "funcLine": "2601",
+            "funcColumn": "85",
+            "name": "enqueueNativeCall(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2650:44)",
+            "category": "JavaScript",
+            "parent": 158
+        },
+        "190": {
+            "line": "3017",
+            "column": "54",
+            "funcLine": "3017",
+            "funcColumn": "54",
+            "name": "deepFreezeAndThrowOnMutationInDev(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:3017:54)",
+            "category": "JavaScript",
+            "parent": 189
+        },
+        "191": {
+            "line": "56553",
+            "column": "39",
+            "funcLine": "56542",
+            "funcColumn": "90",
+            "name": "_performTransitionSideEffects(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56553:39)",
+            "category": "JavaScript",
+            "parent": 46
+        },
+        "192": {
+            "line": "56645",
+            "column": "37",
+            "funcLine": "56639",
+            "funcColumn": "49",
+            "name": "_measureResponderRegion(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56645:37)",
+            "category": "JavaScript",
+            "parent": 191
+        },
+        "193": {
+            "line": "2242",
+            "column": "42",
+            "funcLine": "2224",
+            "funcColumn": "47",
+            "name": "nonPromiseMethodWrapper(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2242:42)",
+            "category": "JavaScript",
+            "parent": 192
+        },
+        "194": {
+            "line": "2655",
+            "column": "27",
+            "funcLine": "2601",
+            "funcColumn": "85",
+            "name": "enqueueNativeCall(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2655:27)",
+            "category": "JavaScript",
+            "parent": 193
+        },
+        "195": {
+            "name": "[Native] dateNow",
+            "category": "Native",
+            "parent": 194
+        },
+        "196": {
+            "line": "23087",
+            "column": "36",
+            "funcLine": "23069",
+            "funcColumn": "46",
+            "name": "performUnitOfWork(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:23087:36)",
+            "category": "JavaScript",
+            "parent": 101
+        },
+        "197": {
+            "line": "23108",
+            "column": "33",
+            "funcLine": "23094",
+            "funcColumn": "47",
+            "name": "completeUnitOfWork(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:23108:33)",
+            "category": "JavaScript",
+            "parent": 196
+        },
+        "198": {
+            "line": "17351",
+            "column": "34",
+            "funcLine": "17346",
+            "funcColumn": "42",
+            "name": "startProfilerTimer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:17351:34)",
+            "category": "JavaScript",
+            "parent": 197
+        },
+        "199": {
+            "line": "46900",
+            "column": "26",
+            "funcLine": "46899",
+            "funcColumn": "44",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46900:26)",
+            "category": "JavaScript",
+            "parent": 198
+        },
+        "200": {
+            "name": "[Native] dateNow",
+            "category": "Native",
+            "parent": 199
+        },
+        "201": {
+            "line": "23110",
+            "column": "55",
+            "funcLine": "23094",
+            "funcColumn": "47",
+            "name": "completeUnitOfWork(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:23110:55)",
+            "category": "JavaScript",
+            "parent": 196
+        },
+        "202": {
+            "line": "17372",
+            "column": "34",
+            "funcLine": "17366",
+            "funcColumn": "82",
+            "name": "stopProfilerTimerIfRunningAndRecordDelta(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:17372:34)",
+            "category": "JavaScript",
+            "parent": 201
+        },
+        "203": {
+            "line": "46900",
+            "column": "26",
+            "funcLine": "46899",
+            "funcColumn": "44",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46900:26)",
+            "category": "JavaScript",
+            "parent": 202
+        },
+        "204": {
+            "name": "[Native] dateNow",
+            "category": "Native",
+            "parent": 203
+        },
+        "205": {
+            "line": "3030",
+            "column": "32",
+            "funcLine": "3017",
+            "funcColumn": "54",
+            "name": "deepFreezeAndThrowOnMutationInDev(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:3030:32)",
+            "category": "JavaScript",
+            "parent": 189
+        },
+        "206": {
+            "name": "[Native] objectDefineProperty",
+            "category": "Native",
+            "parent": 205
+        },
+        "207": {
+            "line": "2731",
+            "column": "74",
+            "funcLine": "2726",
+            "funcColumn": "60",
+            "name": "__callFunction(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2731:74)",
+            "category": "JavaScript",
+            "parent": 3
+        },
+        "208": {
+            "line": "3087",
+            "column": "29",
+            "funcLine": "3067",
+            "funcColumn": "31",
+            "name": "stringifySafe(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:3087:29)",
+            "category": "JavaScript",
+            "parent": 207
+        },
+        "209": {
+            "name": "[Native] jsonStringify",
+            "category": "Native",
+            "parent": 208
+        },
+        "210": {
+            "line": "9464",
+            "column": "38",
+            "funcLine": "9459",
+            "funcColumn": "85",
+            "name": "executeDispatchesAndRelease(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9464:38)",
+            "category": "JavaScript",
+            "parent": 79
+        },
+        "211": {
+            "line": "9945",
+            "column": "25",
+            "funcLine": "9938",
+            "funcColumn": "42",
+            "name": "releasePooledEvent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9945:25)",
+            "category": "JavaScript",
+            "parent": 210
+        },
+        "212": {
+            "line": "9852",
+            "column": "87",
+            "funcLine": "9847",
+            "funcColumn": "43",
+            "name": "destructor(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9852:87)",
+            "category": "JavaScript",
+            "parent": 211
+        },
+        "213": {
+            "line": "9899",
+            "column": "69",
+            "funcLine": "9899",
+            "funcColumn": "69",
+            "name": "getPooledWarningPropertyDefinition(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9899:69)",
+            "category": "JavaScript",
+            "parent": 212
+        },
+        "214": {
+            "line": "54445",
+            "column": "35",
+            "funcLine": "54404",
+            "funcColumn": "32",
+            "name": "render(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54445:35)",
+            "category": "JavaScript",
+            "parent": 132
+        },
+        "215": {
+            "line": "6063",
+            "column": "42",
+            "funcLine": "6029",
+            "funcColumn": "67",
+            "name": "createElementWithValidation(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6063:42)",
+            "category": "JavaScript",
+            "parent": 214
+        },
+        "216": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 215
+        },
+        "217": {
+            "line": "5126",
+            "column": "54",
+            "funcLine": "5126",
+            "funcColumn": "54",
+            "name": "createElement(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5126:54)",
+            "category": "JavaScript",
+            "parent": 216
+        },
+        "218": {
+            "line": "23925",
+            "column": "70",
+            "funcLine": "23924",
+            "funcColumn": "86",
+            "name": "beginWork$$1(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:23925:70)",
+            "category": "JavaScript",
+            "parent": 102
+        },
+        "219": {
+            "line": "24782",
+            "column": "31",
+            "funcLine": "24780",
+            "funcColumn": "59",
+            "name": "assignFiberPropertiesInDEV(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:24782:31)",
+            "category": "JavaScript",
+            "parent": 218
+        },
+        "220": {
+            "line": "24403",
+            "column": "29",
+            "funcLine": "24402",
+            "funcColumn": "76",
+            "name": "createFiber(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:24403:29)",
+            "category": "JavaScript",
+            "parent": 219
+        },
+        "221": {
+            "line": "24349",
+            "column": "56",
+            "funcLine": "24349",
+            "funcColumn": "56",
+            "name": "FiberNode(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:24349:56)",
+            "category": "JavaScript",
+            "parent": 220
+        },
+        "222": {
+            "line": "19409",
+            "column": "38",
+            "funcLine": "19211",
+            "funcColumn": "78",
+            "name": "beginWork$1(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:19409:38)",
+            "category": "JavaScript",
+            "parent": 103
+        },
+        "223": {
+            "line": "17791",
+            "column": "41",
+            "funcLine": "17774",
+            "funcColumn": "105",
+            "name": "updateForwardRef(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:17791:41)",
+            "category": "JavaScript",
+            "parent": 222
+        },
+        "224": {
+            "line": "16110",
+            "column": "33",
+            "funcLine": "16092",
+            "funcColumn": "115",
+            "name": "renderWithHooks(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:16110:33)",
+            "category": "JavaScript",
+            "parent": 223
+        },
+        "225": {
+            "line": "54814",
+            "column": "31",
+            "funcLine": "54813",
+            "funcColumn": "49",
+            "name": "Text(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54814:31)",
+            "category": "JavaScript",
+            "parent": 224
+        },
+        "226": {
+            "line": "6063",
+            "column": "42",
+            "funcLine": "6029",
+            "funcColumn": "67",
+            "name": "createElementWithValidation(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6063:42)",
+            "category": "JavaScript",
+            "parent": 225
+        },
+        "227": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 226
+        },
+        "228": {
+            "line": "5195",
+            "column": "28",
+            "funcLine": "5126",
+            "funcColumn": "54",
+            "name": "createElement(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5195:28)",
+            "category": "JavaScript",
+            "parent": 227
+        },
+        "229": {
+            "line": "5039",
+            "column": "92",
+            "funcLine": "5039",
+            "funcColumn": "92",
+            "name": "ReactElement(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5039:92)",
+            "category": "JavaScript",
+            "parent": 228
+        },
+        "230": {
+            "line": "10346",
+            "column": "60",
+            "funcLine": "10326",
+            "funcColumn": "123",
+            "name": "extractEvents(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10346:60)",
+            "category": "JavaScript",
+            "parent": 15
+        },
+        "231": {
+            "line": "9931",
+            "column": "32",
+            "funcLine": "9926",
+            "funcColumn": "84",
+            "name": "getPooledEvent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9931:32)",
+            "category": "JavaScript",
+            "parent": 230
+        },
+        "232": {
+            "name": "[Native] functionPrototypeCall",
+            "category": "Native",
+            "parent": 231
+        },
+        "233": {
+            "line": "9884",
+            "column": "29",
+            "funcLine": "9883",
+            "funcColumn": "26",
+            "name": "Class(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9884:29)",
+            "category": "JavaScript",
+            "parent": 232
+        },
+        "234": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 233
+        },
+        "235": {
+            "line": "9789",
+            "column": "39",
+            "funcLine": "9765",
+            "funcColumn": "91",
+            "name": "SyntheticEvent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9789:39)",
+            "category": "JavaScript",
+            "parent": 234
+        },
+        "236": {
+            "line": "9751",
+            "column": "45",
+            "funcLine": "9750",
+            "funcColumn": "46",
+            "name": "timeStamp(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9751:45)",
+            "category": "JavaScript",
+            "parent": 235
+        },
+        "237": {
+            "name": "[Native] dateNow",
+            "category": "Native",
+            "parent": 236
+        },
+        "238": {
+            "line": "12682",
+            "column": "35",
+            "funcLine": "12678",
+            "funcColumn": "41",
+            "name": "flushSyncCallbackQueue(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:12682:35)",
+            "category": "JavaScript",
+            "parent": 94
+        },
+        "239": {
+            "line": "47707",
+            "column": "51",
+            "funcLine": "47704",
+            "funcColumn": "46",
+            "name": "unstable_cancelCallback(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:47707:51)",
+            "category": "JavaScript",
+            "parent": 238
+        },
+        "240": {
+            "line": "46900",
+            "column": "26",
+            "funcLine": "46899",
+            "funcColumn": "44",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46900:26)",
+            "category": "JavaScript",
+            "parent": 239
+        },
+        "241": {
+            "name": "[Native] dateNow",
+            "category": "Native",
+            "parent": 240
+        },
+        "242": {
+            "line": "54949",
+            "column": "34",
+            "funcLine": "54919",
+            "funcColumn": "78",
+            "name": "checkType(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54949:34)",
+            "category": "JavaScript",
+            "parent": 119
+        },
+        "243": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 242
+        },
+        "244": {
+            "line": "3067",
+            "column": "31",
+            "funcLine": "3067",
+            "funcColumn": "31",
+            "name": "stringifySafe(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:3067:31)",
+            "category": "JavaScript",
+            "parent": 207
+        },
+        "245": {
+            "line": "6030",
+            "column": "43",
+            "funcLine": "6029",
+            "funcColumn": "67",
+            "name": "createElementWithValidation(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6030:43)",
+            "category": "JavaScript",
+            "parent": 133
+        },
+        "246": {
+            "line": "5653",
+            "column": "41",
+            "funcLine": "5653",
+            "funcColumn": "41",
+            "name": "isValidElementType(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5653:41)",
+            "category": "JavaScript",
+            "parent": 245
+        },
+        "247": {
+            "line": "17351",
+            "column": "34",
+            "funcLine": "17346",
+            "funcColumn": "42",
+            "name": "startProfilerTimer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:17351:34)",
+            "category": "JavaScript",
+            "parent": 126
+        },
+        "248": {
+            "line": "46900",
+            "column": "26",
+            "funcLine": "46899",
+            "funcColumn": "44",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46900:26)",
+            "category": "JavaScript",
+            "parent": 247
+        },
+        "249": {
+            "name": "[Native] dateNow",
+            "category": "Native",
+            "parent": 248
+        },
+        "250": {
+            "line": "56550",
+            "column": "89",
+            "funcLine": "56542",
+            "funcColumn": "90",
+            "name": "_performTransitionSideEffects(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56550:89)",
+            "category": "JavaScript",
+            "parent": 46
+        },
+        "251": {
+            "line": "56285",
+            "column": "64",
+            "funcLine": "56285",
+            "funcColumn": "64",
+            "name": "isActivationSignal(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56285:64)",
+            "category": "JavaScript",
+            "parent": 250
+        },
+        "252": {
+            "line": "10392",
+            "column": "41",
+            "funcLine": "10377",
+            "funcColumn": "123",
+            "name": "extractEvents(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10392:41)",
+            "category": "JavaScript",
+            "parent": 15
+        },
+        "253": {
+            "line": "9729",
+            "column": "27",
+            "funcLine": "9728",
+            "funcColumn": "53",
+            "name": "accumulateTwoPhaseDispatches(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9729:27)",
+            "category": "JavaScript",
+            "parent": 252
+        },
+        "254": {
+            "line": "9453",
+            "column": "18",
+            "funcLine": "9449",
+            "funcColumn": "51",
+            "name": "forEachAccumulated(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9453:18)",
+            "category": "JavaScript",
+            "parent": 253
+        },
+        "255": {
+            "name": "[Native] functionPrototypeCall",
+            "category": "Native",
+            "parent": 254
+        },
+        "256": {
+            "line": "9698",
+            "column": "27",
+            "funcLine": "9696",
+            "funcColumn": "58",
+            "name": "accumulateTwoPhaseDispatchesSingle(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9698:27)",
+            "category": "JavaScript",
+            "parent": 255
+        },
+        "257": {
+            "line": "9675",
+            "column": "13",
+            "funcLine": "9660",
+            "funcColumn": "48",
+            "name": "traverseTwoPhase(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9675:13)",
+            "category": "JavaScript",
+            "parent": 256
+        },
+        "258": {
+            "line": "9688",
+            "column": "39",
+            "funcLine": "9684",
+            "funcColumn": "68",
+            "name": "accumulateDirectionalDispatches(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9688:39)",
+            "category": "JavaScript",
+            "parent": 257
+        },
+        "259": {
+            "line": "9681",
+            "column": "27",
+            "funcLine": "9679",
+            "funcColumn": "63",
+            "name": "listenerAtPhase(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9681:27)",
+            "category": "JavaScript",
+            "parent": 258
+        },
+        "260": {
+            "line": "9522",
+            "column": "52",
+            "funcLine": "9522",
+            "funcColumn": "52",
+            "name": "getListener(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9522:52)",
+            "category": "JavaScript",
+            "parent": 259
+        },
+        "261": {
+            "name": "[GC YoungGen collection]",
+            "category": "Metadata",
+            "parent": 221
+        },
+        "262": {
+            "line": "56067",
+            "column": "40",
+            "funcLine": "56044",
+            "funcColumn": "32",
+            "name": "render(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56067:40)",
+            "category": "JavaScript",
+            "parent": 132
+        },
+        "263": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 262
+        },
+        "264": {
+            "line": "6103",
+            "column": "44",
+            "funcLine": "6102",
+            "funcColumn": "69",
+            "name": "cloneElementWithValidation(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6103:44)",
+            "category": "JavaScript",
+            "parent": 263
+        },
+        "265": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 264
+        },
+        "266": {
+            "line": "5203",
+            "column": "56",
+            "funcLine": "5203",
+            "funcColumn": "56",
+            "name": "cloneElement(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5203:56)",
+            "category": "JavaScript",
+            "parent": 265
+        },
+        "267": {
+            "line": "21802",
+            "column": "31",
+            "funcLine": "21726",
+            "funcColumn": "53",
+            "name": "commitWork(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:21802:31)",
+            "category": "JavaScript",
+            "parent": 155
+        },
+        "268": {
+            "line": "11660",
+            "column": "33",
+            "funcLine": "11657",
+            "funcColumn": "108",
+            "name": "commitUpdate(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:11660:33)",
+            "category": "JavaScript",
+            "parent": 267
+        },
+        "269": {
+            "line": "11362",
+            "column": "30",
+            "funcLine": "11361",
+            "funcColumn": "60",
+            "name": "diff(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:11362:30)",
+            "category": "JavaScript",
+            "parent": 268
+        },
+        "270": {
+            "line": "11286",
+            "column": "30",
+            "funcLine": "11235",
+            "funcColumn": "85",
+            "name": "diffProperties(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:11286:30)",
+            "category": "JavaScript",
+            "parent": 269
+        },
+        "271": {
+            "line": "11100",
+            "column": "56",
+            "funcLine": "11096",
+            "funcColumn": "50",
+            "name": "defaultDiffer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:11100:56)",
+            "category": "JavaScript",
+            "parent": 270
+        },
+        "272": {
+            "line": "46197",
+            "column": "25",
+            "funcLine": "46196",
+            "funcColumn": "22",
+            "name": "get deepDiffer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46197:25)",
+            "category": "JavaScript",
+            "parent": 271
+        },
+        "273": {
+            "line": "71",
+            "column": "35",
+            "funcLine": "71",
+            "funcColumn": "35",
+            "name": "metroRequire(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:71:35)",
+            "category": "JavaScript",
+            "parent": 272
+        },
+        "274": {
+            "line": "6672",
+            "column": "114",
+            "funcLine": "6672",
+            "funcColumn": "114",
+            "name": "colorPropType(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6672:114)",
+            "category": "JavaScript",
+            "parent": 243
+        },
+        "275": {
+            "line": "7509",
+            "column": "102",
+            "funcLine": "7509",
+            "funcColumn": "102",
+            "name": "checkType(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:7509:102)",
+            "category": "JavaScript",
+            "parent": 136
+        },
+        "276": {
+            "line": "18068",
+            "column": "28",
+            "funcLine": "18028",
+            "funcColumn": "124",
+            "name": "finishClassComponent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:18068:28)",
+            "category": "JavaScript",
+            "parent": 131
+        },
+        "277": {
+            "line": "17765",
+            "column": "54",
+            "funcLine": "17761",
+            "funcColumn": "98",
+            "name": "reconcileChildren(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:17765:54)",
+            "category": "JavaScript",
+            "parent": 276
+        },
+        "278": {
+            "line": "15563",
+            "column": "63",
+            "funcLine": "15551",
+            "funcColumn": "97",
+            "name": "reconcileChildFibers(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:15563:63)",
+            "category": "JavaScript",
+            "parent": 277
+        },
+        "279": {
+            "line": "15484",
+            "column": "98",
+            "funcLine": "15484",
+            "funcColumn": "98",
+            "name": "reconcileSingleElement(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:15484:98)",
+            "category": "JavaScript",
+            "parent": 278
+        },
+        "280": {
+            "line": "23114",
+            "column": "30",
+            "funcLine": "23094",
+            "funcColumn": "47",
+            "name": "completeUnitOfWork(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:23114:30)",
+            "category": "JavaScript",
+            "parent": 196
+        },
+        "281": {
+            "line": "11863",
+            "column": "36",
+            "funcLine": "11863",
+            "funcColumn": "36",
+            "name": "resetCurrentFiber(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:11863:36)",
+            "category": "JavaScript",
+            "parent": 280
+        },
+        "282": {
+            "line": "10329",
+            "column": "30",
+            "funcLine": "10326",
+            "funcColumn": "123",
+            "name": "extractEvents(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10329:30)",
+            "category": "JavaScript",
+            "parent": 15
+        },
+        "283": {
+            "line": "9978",
+            "column": "39",
+            "funcLine": "9978",
+            "funcColumn": "39",
+            "name": "isEndish(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9978:39)",
+            "category": "JavaScript",
+            "parent": 282
+        },
+        "284": {
+            "line": "46899",
+            "column": "44",
+            "funcLine": "46899",
+            "funcColumn": "44",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46899:44)",
+            "category": "JavaScript",
+            "parent": 181
+        },
+        "285": {
+            "line": "54640",
+            "column": "35",
+            "funcLine": "54615",
+            "funcColumn": "32",
+            "name": "render(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54640:35)",
+            "category": "JavaScript",
+            "parent": 132
+        },
+        "286": {
+            "line": "6063",
+            "column": "42",
+            "funcLine": "6029",
+            "funcColumn": "67",
+            "name": "createElementWithValidation(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6063:42)",
+            "category": "JavaScript",
+            "parent": 285
+        },
+        "287": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 286
+        },
+        "288": {
+            "line": "5126",
+            "column": "54",
+            "funcLine": "5126",
+            "funcColumn": "54",
+            "name": "createElement(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5126:54)",
+            "category": "JavaScript",
+            "parent": 287
+        },
+        "289": {
+            "line": "54949",
+            "column": "34",
+            "funcLine": "54919",
+            "funcColumn": "78",
+            "name": "checkType(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54949:34)",
+            "category": "JavaScript",
+            "parent": 140
+        },
+        "290": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 289
+        },
+        "291": {
+            "line": "8084",
+            "column": "62",
+            "funcLine": "8084",
+            "funcColumn": "62",
+            "name": "validate(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:8084:62)",
+            "category": "JavaScript",
+            "parent": 290
+        },
+        "292": {
+            "line": "56394",
+            "column": "34",
+            "funcLine": "56386",
+            "funcColumn": "62",
+            "name": "onResponderGrant(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56394:34)",
+            "category": "JavaScript",
+            "parent": 44
+        },
+        "293": {
+            "line": "56535",
+            "column": "45",
+            "funcLine": "56522",
+            "funcColumn": "53",
+            "name": "_receiveSignal(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56535:45)",
+            "category": "JavaScript",
+            "parent": 292
+        },
+        "294": {
+            "line": "56553",
+            "column": "39",
+            "funcLine": "56542",
+            "funcColumn": "90",
+            "name": "_performTransitionSideEffects(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56553:39)",
+            "category": "JavaScript",
+            "parent": 293
+        },
+        "295": {
+            "line": "56645",
+            "column": "37",
+            "funcLine": "56639",
+            "funcColumn": "49",
+            "name": "_measureResponderRegion(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56645:37)",
+            "category": "JavaScript",
+            "parent": 294
+        },
+        "296": {
+            "line": "2242",
+            "column": "42",
+            "funcLine": "2224",
+            "funcColumn": "47",
+            "name": "nonPromiseMethodWrapper(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2242:42)",
+            "category": "JavaScript",
+            "parent": 295
+        },
+        "297": {
+            "line": "2602",
+            "column": "30",
+            "funcLine": "2601",
+            "funcColumn": "85",
+            "name": "enqueueNativeCall(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2602:30)",
+            "category": "JavaScript",
+            "parent": 296
+        },
+        "298": {
+            "line": "2557",
+            "column": "84",
+            "funcLine": "2557",
+            "funcColumn": "84",
+            "name": "processCallbacks(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2557:84)",
+            "category": "JavaScript",
+            "parent": 297
+        },
+        "299": {
+            "line": "2650",
+            "column": "44",
+            "funcLine": "2601",
+            "funcColumn": "85",
+            "name": "enqueueNativeCall(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2650:44)",
+            "category": "JavaScript",
+            "parent": 58
+        },
+        "300": {
+            "line": "3034",
+            "column": "47",
+            "funcLine": "3017",
+            "funcColumn": "54",
+            "name": "deepFreezeAndThrowOnMutationInDev(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:3034:47)",
+            "category": "JavaScript",
+            "parent": 299
+        },
+        "301": {
+            "name": "[Native] functionPrototypeBind",
+            "category": "Native",
+            "parent": 300
+        },
+        "302": {
+            "line": "56597",
+            "column": "22",
+            "funcLine": "56542",
+            "funcColumn": "90",
+            "name": "_performTransitionSideEffects(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:56597:22)",
+            "category": "JavaScript",
+            "parent": 90
+        },
+        "303": {
+            "line": "55973",
+            "column": "34",
+            "funcLine": "55971",
+            "funcColumn": "44",
+            "name": "onPress(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:55973:34)",
+            "category": "JavaScript",
+            "parent": 302
+        },
+        "304": {
+            "line": "104554",
+            "column": "18",
+            "funcLine": "104553",
+            "funcColumn": "35",
+            "name": "onPress(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:104554:18)",
+            "category": "JavaScript",
+            "parent": 303
+        },
+        "305": {
+            "line": "104521",
+            "column": "9",
+            "funcLine": "104520",
+            "funcColumn": "26",
+            "name": "f1(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:104521:9)",
+            "category": "JavaScript",
+            "parent": 304
+        },
+        "306": {
+            "line": "104525",
+            "column": "9",
+            "funcLine": "104524",
+            "funcColumn": "26",
+            "name": "f2(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:104525:9)",
+            "category": "JavaScript",
+            "parent": 305
+        },
+        "307": {
+            "line": "104529",
+            "column": "17",
+            "funcLine": "104528",
+            "funcColumn": "26",
+            "name": "f3(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:104529:17)",
+            "category": "JavaScript",
+            "parent": 306
+        },
+        "308": {
+            "line": "16807",
+            "column": "23",
+            "funcLine": "16702",
+            "funcColumn": "53",
+            "name": "dispatchAction(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:16807:23)",
+            "category": "JavaScript",
+            "parent": 307
+        },
+        "309": {
+            "line": "22340",
+            "column": "34",
+            "funcLine": "22321",
+            "funcColumn": "61",
+            "name": "scheduleUpdateOnFiber(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:22340:34)",
+            "category": "JavaScript",
+            "parent": 308
+        },
+        "310": {
+            "line": "22481",
+            "column": "46",
+            "funcLine": "22439",
+            "funcColumn": "44",
+            "name": "ensureRootIsScheduled(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:22481:46)",
+            "category": "JavaScript",
+            "parent": 309
+        },
+        "311": {
+            "line": "12664",
+            "column": "66",
+            "funcLine": "12661",
+            "funcColumn": "47",
+            "name": "scheduleSyncCallback(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:12664:66)",
+            "category": "JavaScript",
+            "parent": 310
+        },
+        "312": {
+            "line": "47679",
+            "column": "33",
+            "funcLine": "47620",
+            "funcColumn": "76",
+            "name": "unstable_scheduleCallback(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:47679:33)",
+            "category": "JavaScript",
+            "parent": 311
+        },
+        "313": {
+            "line": "46908",
+            "column": "23",
+            "funcLine": "46903",
+            "funcColumn": "65",
+            "name": "requestHostCallback(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46908:23)",
+            "category": "JavaScript",
+            "parent": 312
+        },
+        "314": {
+            "line": "32485",
+            "column": "46",
+            "funcLine": "32472",
+            "funcColumn": "53",
+            "name": "setTimeout(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:32485:46)",
+            "category": "JavaScript",
+            "parent": 313
+        },
+        "315": {
+            "name": "[Native] dateNow",
+            "category": "Native",
+            "parent": 314
+        },
+        "316": {
+            "line": "8085",
+            "column": "42",
+            "funcLine": "8084",
+            "funcColumn": "62",
+            "name": "validate(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:8085:42)",
+            "category": "JavaScript",
+            "parent": 243
+        },
+        "317": {
+            "line": "3675",
+            "column": "74",
+            "funcLine": "3675",
+            "funcColumn": "74",
+            "name": "getViewManagerConfig(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:3675:74)",
+            "category": "JavaScript",
+            "parent": 316
+        },
+        "318": {
+            "line": "2473",
+            "column": "33",
+            "funcLine": "2466",
+            "funcColumn": "76",
+            "name": "callFunctionReturnFlushedQueue(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2473:33)",
+            "category": "JavaScript"
+        },
+        "319": {
+            "line": "2504",
+            "column": "21",
+            "funcLine": "2501",
+            "funcColumn": "38",
+            "name": "flushedQueue(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2504:21)",
+            "category": "JavaScript",
+            "parent": 318
+        },
+        "320": {
+            "line": "2698",
+            "column": "38",
+            "funcLine": "2697",
+            "funcColumn": "35",
+            "name": "__guard(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2698:38)",
+            "category": "JavaScript",
+            "parent": 319
+        },
+        "321": {
+            "line": "2710",
+            "column": "46",
+            "funcLine": "2710",
+            "funcColumn": "46",
+            "name": "__shouldPauseOnThrow(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2710:46)",
+            "category": "JavaScript",
+            "parent": 320
+        },
+        "322": {
+            "line": "2649",
+            "column": "108",
+            "funcLine": "2601",
+            "funcColumn": "85",
+            "name": "enqueueNativeCall(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2649:108)",
+            "category": "JavaScript",
+            "parent": 158
+        },
+        "323": {
+            "name": "[Native] jsonStringify",
+            "category": "Native",
+            "parent": 322
+        },
+        "324": {
+            "line": "32606",
+            "column": "19",
+            "funcLine": "32601",
+            "funcColumn": "51",
+            "name": "callTimers(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:32606:19)",
+            "category": "JavaScript",
+            "parent": 5
+        },
+        "325": {
+            "line": "32400",
+            "column": "17",
+            "funcLine": "32373",
+            "funcColumn": "55",
+            "name": "_callTimer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:32400:17)",
+            "category": "JavaScript",
+            "parent": 324
+        },
+        "326": {
+            "line": "32482",
+            "column": "26",
+            "funcLine": "32481",
+            "funcColumn": "46",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:32482:26)",
+            "category": "JavaScript",
+            "parent": 325
+        },
+        "327": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 326
+        },
+        "328": {
+            "line": "46884",
+            "column": "53",
+            "funcLine": "46881",
+            "funcColumn": "56",
+            "name": "_flushCallback(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46884:53)",
+            "category": "JavaScript",
+            "parent": 327
+        },
+        "329": {
+            "line": "46900",
+            "column": "26",
+            "funcLine": "46899",
+            "funcColumn": "44",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:46900:26)",
+            "category": "JavaScript",
+            "parent": 328
+        },
+        "330": {
+            "name": "[Native] dateNow",
+            "category": "Native",
+            "parent": 329
+        },
+        "331": {
+            "line": "10259",
+            "column": "59",
+            "funcLine": "10235",
+            "funcColumn": "105",
+            "name": "setResponderAndExtractTransfer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:10259:59)",
+            "category": "JavaScript",
+            "parent": 21
+        },
+        "332": {
+            "line": "9931",
+            "column": "32",
+            "funcLine": "9926",
+            "funcColumn": "84",
+            "name": "getPooledEvent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9931:32)",
+            "category": "JavaScript",
+            "parent": 331
+        },
+        "333": {
+            "name": "[Native] functionPrototypeCall",
+            "category": "Native",
+            "parent": 332
+        },
+        "334": {
+            "line": "9884",
+            "column": "29",
+            "funcLine": "9883",
+            "funcColumn": "26",
+            "name": "Class(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9884:29)",
+            "category": "JavaScript",
+            "parent": 333
+        },
+        "335": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 334
+        },
+        "336": {
+            "line": "9789",
+            "column": "39",
+            "funcLine": "9765",
+            "funcColumn": "91",
+            "name": "SyntheticEvent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9789:39)",
+            "category": "JavaScript",
+            "parent": 335
+        },
+        "337": {
+            "line": "9751",
+            "column": "45",
+            "funcLine": "9750",
+            "funcColumn": "46",
+            "name": "timeStamp(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9751:45)",
+            "category": "JavaScript",
+            "parent": 336
+        },
+        "338": {
+            "name": "[Native] dateNow",
+            "category": "Native",
+            "parent": 337
+        },
+        "339": {
+            "line": "15492",
+            "column": "40",
+            "funcLine": "15484",
+            "funcColumn": "98",
+            "name": "reconcileSingleElement(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:15492:40)",
+            "category": "JavaScript",
+            "parent": 278
+        },
+        "340": {
+            "line": "14944",
+            "column": "43",
+            "funcLine": "14943",
+            "funcColumn": "64",
+            "name": "useFiber(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:14944:43)",
+            "category": "JavaScript",
+            "parent": 339
+        },
+        "341": {
+            "line": "24433",
+            "column": "76",
+            "funcLine": "24433",
+            "funcColumn": "76",
+            "name": "createWorkInProgress(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:24433:76)",
+            "category": "JavaScript",
+            "parent": 340
+        },
+        "342": {
+            "line": "9938",
+            "column": "42",
+            "funcLine": "9938",
+            "funcColumn": "42",
+            "name": "releasePooledEvent(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:9938:42)",
+            "category": "JavaScript",
+            "parent": 210
+        },
+        "343": {
+            "line": "5261",
+            "column": "28",
+            "funcLine": "5203",
+            "funcColumn": "56",
+            "name": "cloneElement(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5261:28)",
+            "category": "JavaScript",
+            "parent": 265
+        },
+        "344": {
+            "line": "5056",
+            "column": "32",
+            "funcLine": "5039",
+            "funcColumn": "92",
+            "name": "ReactElement(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5056:32)",
+            "category": "JavaScript",
+            "parent": 343
+        },
+        "345": {
+            "name": "[Native] objectDefineProperty",
+            "category": "Native",
+            "parent": 344
+        },
+        "346": {
+            "line": "3039",
+            "column": "20",
+            "funcLine": "3017",
+            "funcColumn": "54",
+            "name": "deepFreezeAndThrowOnMutationInDev(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:3039:20)",
+            "category": "JavaScript",
+            "parent": 189
+        },
+        "347": {
+            "name": "[Native] objectFreeze",
+            "category": "Native",
+            "parent": 346
+        },
+        "348": {
+            "line": "104545",
+            "column": "37",
+            "funcLine": "104512",
+            "funcColumn": "28",
+            "name": "App(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:104545:37)",
+            "category": "JavaScript",
+            "parent": 106
+        },
+        "349": {
+            "line": "6078",
+            "column": "28",
+            "funcLine": "6029",
+            "funcColumn": "67",
+            "name": "createElementWithValidation(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6078:28)",
+            "category": "JavaScript",
+            "parent": 348
+        },
+        "350": {
+            "line": "5914",
+            "column": "25",
+            "funcLine": "5894",
+            "funcColumn": "43",
+            "name": "validatePropTypes(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5914:25)",
+            "category": "JavaScript",
+            "parent": 349
+        },
+        "351": {
+            "line": "6298",
+            "column": "44",
+            "funcLine": "6285",
+            "funcColumn": "81",
+            "name": "checkPropTypes(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6298:44)",
+            "category": "JavaScript",
+            "parent": 350
+        },
+        "352": {
+            "line": "54901",
+            "column": "94",
+            "funcLine": "54889",
+            "funcColumn": "64",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54901:94)",
+            "category": "JavaScript",
+            "parent": 351
+        },
+        "353": {
+            "name": "[Native] arrayPrototypeConcat",
+            "category": "Native",
+            "parent": 352
+        },
+        "354": {
+            "line": "54914",
+            "column": "219",
+            "funcLine": "54914",
+            "funcColumn": "202",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54914:219)",
+            "category": "JavaScript",
+            "parent": 122
+        },
+        "355": {
+            "line": "3783",
+            "column": "45",
+            "funcLine": "3783",
+            "funcColumn": "45",
+            "name": "_defineProperty(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:3783:45)",
+            "category": "JavaScript",
+            "parent": 354
+        },
+        "356": {
+            "name": "[GC YoungGen collection]",
+            "category": "Metadata",
+            "parent": 355
+        },
+        "357": {
+            "line": "19425",
+            "column": "41",
+            "funcLine": "19211",
+            "funcColumn": "78",
+            "name": "beginWork$1(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:19425:41)",
+            "category": "JavaScript",
+            "parent": 103
+        },
+        "358": {
+            "line": "19101",
+            "column": "31",
+            "funcLine": "19074",
+            "funcColumn": "88",
+            "name": "updateContextConsumer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:19101:31)",
+            "category": "JavaScript",
+            "parent": 357
+        },
+        "359": {
+            "line": "54654",
+            "column": "36",
+            "funcLine": "54646",
+            "funcColumn": "39",
+            "name": "(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:54654:36)",
+            "category": "JavaScript",
+            "parent": 358
+        },
+        "360": {
+            "line": "6063",
+            "column": "42",
+            "funcLine": "6029",
+            "funcColumn": "67",
+            "name": "createElementWithValidation(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:6063:42)",
+            "category": "JavaScript",
+            "parent": 359
+        },
+        "361": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 360
+        },
+        "362": {
+            "line": "5195",
+            "column": "28",
+            "funcLine": "5126",
+            "funcColumn": "54",
+            "name": "createElement(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5195:28)",
+            "category": "JavaScript",
+            "parent": 361
+        },
+        "363": {
+            "line": "5039",
+            "column": "92",
+            "funcLine": "5039",
+            "funcColumn": "92",
+            "name": "ReactElement(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:5039:92)",
+            "category": "JavaScript",
+            "parent": 362
+        },
+        "364": {
+            "line": "32584",
+            "column": "20",
+            "funcLine": "32583",
+            "funcColumn": "50",
+            "name": "clearTimeout(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:32584:20)",
+            "category": "JavaScript",
+            "parent": 92
+        },
+        "365": {
+            "line": "32466",
+            "column": "20",
+            "funcLine": "32453",
+            "funcColumn": "35",
+            "name": "_freeCallback(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:32466:20)",
+            "category": "JavaScript",
+            "parent": 364
+        },
+        "366": {
+            "line": "32683",
+            "column": "38",
+            "funcLine": "32680",
+            "funcColumn": "33",
+            "name": "deleteTimer(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:32683:38)",
+            "category": "JavaScript",
+            "parent": 365
+        },
+        "367": {
+            "line": "2242",
+            "column": "42",
+            "funcLine": "2224",
+            "funcColumn": "47",
+            "name": "nonPromiseMethodWrapper(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2242:42)",
+            "category": "JavaScript",
+            "parent": 366
+        },
+        "368": {
+            "line": "2649",
+            "column": "108",
+            "funcLine": "2601",
+            "funcColumn": "85",
+            "name": "enqueueNativeCall(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:2649:108)",
+            "category": "JavaScript",
+            "parent": 367
+        },
+        "369": {
+            "name": "[Native] jsonStringify",
+            "category": "Native",
+            "parent": 368
+        },
+        "370": {
+            "line": "19211",
+            "column": "78",
+            "funcLine": "19211",
+            "funcColumn": "78",
+            "name": "beginWork$1(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:19211:78)",
+            "category": "JavaScript",
+            "parent": 103
+        },
+        "371": {
+            "line": "24780",
+            "column": "59",
+            "funcLine": "24780",
+            "funcColumn": "59",
+            "name": "assignFiberPropertiesInDEV(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:24780:59)",
+            "category": "JavaScript",
+            "parent": 218
+        },
+        "372": {
+            "line": "3420",
+            "column": "42",
+            "funcLine": "3411",
+            "funcColumn": "39",
+            "name": "emit(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:3420:42)",
+            "category": "JavaScript",
+            "parent": 5
+        },
+        "373": {
+            "name": "[Native] functionPrototypeApply",
+            "category": "Native",
+            "parent": 372
+        },
+        "374": {
+            "line": "37253",
+            "column": "31",
+            "funcLine": "37237",
+            "funcColumn": "58",
+            "name": "connectToDevTools(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:37253:31)",
+            "category": "JavaScript",
+            "parent": 373
+        },
+        "375": {
+            "line": "34668",
+            "column": "49",
+            "funcLine": "34668",
+            "funcColumn": "49",
+            "name": "WebSocket(http://10.0.2.2:8081/index.bundle?platform=android&dev=true&minify=false:34668:49)",
+            "category": "JavaScript",
+            "parent": 374
+        }
+    }
+}

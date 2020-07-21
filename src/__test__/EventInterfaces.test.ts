@@ -1,4 +1,4 @@
-import { Event, FlowEvent, DurationEvent } from '../types/EventInterfaces';
+import { Event, DurationEvent, FlowEvent } from '../types/EventInterfaces';
 import { EventsPhase } from '../types/Phases';
 
 /**
@@ -12,34 +12,27 @@ import { EventsPhase } from '../types/Phases';
 describe('Event', () => {
   it('should allow constructing event objects using EventsPhase enum values', () => {
     // create a new flow event
-    const event: FlowEvent = {
-      ts: 'ts',
-      ph: EventsPhase.FLOW_EVENTS_START,
+    const event: DurationEvent = {
+      ts: 1,
+      ph: EventsPhase.DURATION_EVENTS_BEGIN,
     };
 
     // check that value is correct in runtime
-    expect(event).toEqual({ ts: 'ts', ph: 's' });
+    expect(event).toEqual({ ts: 1, ph: 'B' });
   });
   it('should not allow constructing event objects using wrong enum values', () => {
     // try to create a new flow event, should fail with TypeScript error
     // @ts-expect-error
-    const event: FlowEvent = { ts: 'ts', ph: EventsPhase.INSTANT_EVENTS };
+    const event: DurationEvent = { ts: 1, ph: EventsPhase.INSTANT_EVENTS };
 
     // at runtime object is still created, but we should never be here
-    expect(event).toEqual({ ts: 'ts', ph: 'I' });
+    expect(event).toEqual({ ts: 1, ph: 'I' });
   });
 
   it('should not allow constructing event objects with phase literal at type level', () => {
     // try to create a new flow event, should fail with TypeScript error
     // @ts-expect-error
-    const event: FlowEvent = { ts: 'ts', ph: 's' };
-
-    // check that value is correct in runtime
-    expect(event).toEqual({ ts: 'ts', ph: 's' });
-  });
-
-  it('should allow coercing event objects with correct phase literal', () => {
-    const event: FlowEvent = { ts: 'ts', ph: 's' } as FlowEvent;
+    const event: DurationEvent = { ts: 'ts', ph: 's' };
 
     // check that value is correct in runtime
     expect(event).toEqual({ ts: 'ts', ph: 's' });
@@ -48,32 +41,35 @@ describe('Event', () => {
   it('should not allow coercing event objects with incorrect phase literal', () => {
     // try to create a new flow event, should fail with TypeScript error
     // @ts-expect-error
-    const event: FlowEvent = { ts: 'ts', ph: 'NOT_s' } as FlowEvent;
+    const event: DurationEvent = { ts: 'ts', ph: 'NOT_s' } as DurationEvent;
 
     // check that value is correct in runtime
     expect(event).toEqual({ ts: 'ts', ph: 'NOT_s' });
   });
 
   it('should allow polymorphic lists of different event types', () => {
-    const flow: FlowEvent = { ts: 'ts', ph: EventsPhase.FLOW_EVENTS_STEP };
+    const flow: FlowEvent = { ts: 1, ph: EventsPhase.FLOW_EVENTS_END };
     const duration: DurationEvent = {
-      ts: 'ts',
-      ph: EventsPhase.DURATION_EVENTS_BEGIN,
+      ts: 1,
+      ph: EventsPhase.DURATION_EVENTS_END,
     };
 
     // should not type error
     const events: Event[] = [flow, duration];
 
     expect(events).toEqual([
-      { ts: 'ts', ph: 't' },
-      { ts: 'ts', ph: 'B' },
+      { ts: 1, ph: 'f' },
+      { ts: 1, ph: 'E' },
     ]);
   });
 
   it('should not allow polymorphic lists where any value is not a valid event type', () => {
-    const flow: FlowEvent = { ts: 'ts', ph: EventsPhase.FLOW_EVENTS_STEP };
-    const duration: DurationEvent = {
-      ts: 'ts',
+    const durationEnd: DurationEvent = {
+      ts: 1,
+      ph: EventsPhase.DURATION_EVENTS_END,
+    };
+    const durationBegin: DurationEvent = {
+      ts: 1,
       ph: EventsPhase.DURATION_EVENTS_BEGIN,
     };
     const invalid = {
@@ -82,11 +78,11 @@ describe('Event', () => {
     };
 
     // @ts-expect-error
-    const events: Event[] = [flow, duration, invalid];
+    const events: Event[] = [durationEnd, durationBegin, invalid];
 
     expect(events).toEqual([
-      { ts: 'ts', ph: 't' },
-      { ts: 'ts', ph: 'B' },
+      { ts: 1, ph: 'E' },
+      { ts: 1, ph: 'B' },
       { ts: 'ts', ph: 'invalid' },
     ]);
   });
@@ -97,35 +93,34 @@ describe('Event', () => {
     // we can use a type guard
     //
     // See: https://www.typescriptlang.org/docs/handbook/advanced-types.html#user-defined-type-guards
-    function isFlowEvent(event: any): event is FlowEvent {
+    function isDurationEvent(event: any): event is DurationEvent {
       return (
-        event.ph === EventsPhase.FLOW_EVENTS_START ||
-        event.ph === EventsPhase.FLOW_EVENTS_END ||
-        event.ph === EventsPhase.FLOW_EVENTS_STEP
+        event.ph === EventsPhase.DURATION_EVENTS_BEGIN ||
+        event.ph === EventsPhase.DURATION_EVENTS_END
       );
     }
 
-    // This function expects a flow event
-    function expectsFlowEvent(event: FlowEvent): any {
+    // This function expects a duration event
+    function expectsDurationEvent(event: DurationEvent): any {
       return event.ph;
     }
 
     // This
-    const flowEventLike = { ts: 'ts', ph: 's' };
+    const durationEventLike = { ts: 1, ph: 'B' };
 
-    // This fails, because string `s` is not coerced to EventsPhase
+    // This fails, because string `B` is not coerced to EventsPhase
     // @ts-expect-error
-    expectsFlowEvent(flowEventLike);
+    expectsDurationEvent(durationEventLike);
 
     // But if we use our type guard first...
-    if (isFlowEvent(flowEventLike)) {
-      // This will pass, because isFlowEvent type guard refines the type
+    if (isDurationEvent(durationEventLike)) {
+      // This will pass, because isDurationEvent type guard refines the type
       // by checking that the value matches the expected type
-      expectsFlowEvent(flowEventLike);
+      expectsDurationEvent(durationEventLike);
     } else {
       // This will fail, because the value didn't match
       // @ts-expect-error
-      expectsFlowEvent(flowEventLike);
+      expectsDurationEvent(durationEventLike);
     }
   });
 });

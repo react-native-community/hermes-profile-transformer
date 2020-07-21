@@ -1,11 +1,13 @@
 import fs from 'fs';
-import { parseHermesToLightHouse } from './lighthouse/hermesSampleToCPUProfileTransformer';
+import { CpuProfilerModel } from './profiler/cpuProfilerModel';
 
-fs.writeFileSync(
-  'lighthouse_compatible.json',
-  JSON.stringify(
-    parseHermesToLightHouse(
-      JSON.parse(fs.readFileSync('hermes_sample.cpuprofile', 'utf-8'))
-    )
-  )
-);
+// Read Hermes Profile
+// Replace with CLI transform function as it will just give the path of the CPU profile,
+// adopting same model here
+
+const PROFILE_PATH = 'nestedFuncProfile.cpuprofile';
+const hermesProfile = JSON.parse(fs.readFileSync(PROFILE_PATH, 'utf-8'));
+const profileChunk = CpuProfilerModel.collectProfileEvents(hermesProfile);
+const profiler = new CpuProfilerModel(profileChunk);
+const chromeEvents = profiler.createStartEndEvents();
+fs.writeFileSync('chrome_events.json', JSON.stringify(chromeEvents));
