@@ -362,7 +362,7 @@ export class CpuProfilerModel {
         sm.name ||
         (event.args?.data.callFrame.url
           ? event.args?.data.callFrame.url.split('/').pop()
-          : null);
+          : event.args?.data.callFrame.name);
       return event;
     });
     consumer.destroy();
