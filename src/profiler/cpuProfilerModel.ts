@@ -346,10 +346,23 @@ export class CpuProfilerModel {
         data: {
           callFrame: {
             ...event.args?.data.callFrame,
-            sourceMap: sm,
+            url: sm.source,
+            line: sm.line,
+            column: sm.column,
           },
         },
       };
+      /**
+       * The name in source maps (for reasons I don't understand) is sometimes null, so OR-ing this
+       * to ensure a name is assigned.
+       * In case a name wasn't found, the URL is used
+       * Eg: /Users/saphal/Desktop/app/node_modules/react-native/Libraries/BatchedBridge/MessageQueue.js => MessageQueue.js
+       */
+      event.name =
+        sm.name ||
+        (event.args?.data.callFrame.url
+          ? event.args?.data.callFrame.url.split('/').pop()
+          : null);
       return event;
     });
     consumer.destroy();
