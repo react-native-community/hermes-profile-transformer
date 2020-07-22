@@ -26,10 +26,6 @@
  * @see https://github.com/jlfwong/speedscope/blob/9ed1eb192cb7e9dac43a5f25bd101af169dc654a/src/import/chrome.ts#L200
  */
 
-//  Imports for Source Maps
-// import ip from 'ip';
-// import { SourceMapConsumer, RawSourceMap } from 'source-map';
-
 import axios, { AxiosResponse } from 'axios';
 import { SourceMapConsumer, RawSourceMap } from 'source-map';
 
@@ -129,7 +125,7 @@ export class CpuProfilerModel {
    * @param {number} timestamp
    * @param {Array<number>} previousNodeIds
    * @param {Array<number>} currentNodeIds
-   * @returns {Array<DurationEvent}
+   * @returns {Array<DurationEvent>}
    */
   _createStartEndEventsForTransition(
     timestamp: number,
@@ -167,16 +163,6 @@ export class CpuProfilerModel {
       .map(evt => ({ ...evt, ph: EventsPhase.DURATION_EVENTS_END }));
     return [...endEvents.reverse(), ...startEvents];
   }
-
-  // Useful to get source maps and consequent function names
-  // getFunctionNameFromMetroServer(name: string) {
-  //   // TODO: Get a debug port, I rememeber this being a environment variable in CLI
-  //   const DEBUG_SERVER_PORT: number = 8081;
-  //   // TODO: Currently working only for android, as we use ADB to interact with files
-  //   const PLATFORM = 'android';
-  //   const IP_ADDRESS = ip.address();
-  //   const RN_SOURCE_MAP: string = `http://${IP_ADDRESS}:${DEBUG_SERVER_PORT}/index.map?platform=${PLATFORM}&dev=true`;
-  // }
 
   /**
    * Creates B/E-style trace events from a CpuProfile object created by `collectProfileEvents()`
@@ -307,10 +293,10 @@ export class CpuProfilerModel {
     samples.forEach((sample: HermesSample, idx: number) => {
       returnedSamples.push(sample.sf);
       if (idx === 0) {
-        timeDeltas.push(Number(sample.ts) / 1000);
+        timeDeltas.push(Number(sample.ts) / 10e6);
       } else {
         const timeDiff = Number(sample.ts) - timeDeltas[idx - 1];
-        timeDeltas.push(timeDiff / 1000);
+        timeDeltas.push(timeDiff / 10e6);
       }
     });
     return {
@@ -331,6 +317,10 @@ export class CpuProfilerModel {
     metroServerURL: string,
     chromeEvents: DurationEvent[]
   ): Promise<DurationEvent[]> {
+    /**
+     * To eliminate Metro Server depedency, sourceMap needs to be the input of this function NOT
+     * metroServerURL
+     */
     const response = (await axios.get(metroServerURL)) as AxiosResponse<
       SourceMap
     >;
