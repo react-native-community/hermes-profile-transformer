@@ -290,15 +290,18 @@ export class CpuProfilerModel {
     );
     const returnedSamples: number[] = [];
     const timeDeltas: number[] = [];
+    let lastTimeStamp = Number(samples[0].ts);
     samples.forEach((sample: HermesSample, idx: number) => {
       returnedSamples.push(sample.sf);
       if (idx === 0) {
-        timeDeltas.push(Number(sample.ts) / 10e6);
+        timeDeltas.push(0);
       } else {
-        const timeDiff = Number(sample.ts) - timeDeltas[idx - 1];
-        timeDeltas.push(timeDiff / 10e6);
+        const timeDiff = Number(sample.ts) - lastTimeStamp;
+        lastTimeStamp = Number(sample.ts);
+        timeDeltas.push(timeDiff);
       }
     });
+
     return {
       nodes: profileNodes,
       sampleNumbers: returnedSamples,

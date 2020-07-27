@@ -38,6 +38,6 @@ const chromeEvents = profiler.createStartEndEvents();
  */
 CpuProfilerModel.changeNamesToSourceMaps(RN_SOURCE_MAP, chromeEvents).then(
   (events: DurationEvent[]) => {
-    writeFileSync('chrome_events.json', JSON.stringify(events));
+    writeFileSync(`${PROFILE_PATH.split('.')[0]}.json`, JSON.stringify(events));
   }
 );
