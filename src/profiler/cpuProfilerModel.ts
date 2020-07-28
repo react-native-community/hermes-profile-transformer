@@ -2,6 +2,12 @@
  * @license Copyright 2020 The Lighthouse Authors. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+ * This file is heavily derived from `https://github.com/GoogleChrome/lighthouse/blob/0422daa9b1b8528dd8436860b153134bd0f959f1/lighthouse-core/lib/tracehouse/cpu-profile-model.js`
+ * and has been modified by Saphal Patro (email: saphal1998@gmail.com)
+ * The following changes have been made to the original file:
+ * 1. Converted code to Typescript and defined necessary types
+ * 2. Wrote a method @see collectProfileEvents to convert the Hermes Samples to Profile Chunks supported by Lighthouse Parser
+ * 3. Modified @see constructNodes to work with the Hermes Samples and StackFrames
  */
 
 /**
@@ -26,9 +32,6 @@
  * @see https://github.com/jlfwong/speedscope/blob/9ed1eb192cb7e9dac43a5f25bd101af169dc654a/src/import/chrome.ts#L200
  */
 
-import axios, { AxiosResponse } from 'axios';
-import { SourceMapConsumer, RawSourceMap } from 'source-map';
-
 import {
   DurationEvent,
   HermesCPUProfile,
@@ -37,7 +40,6 @@ import {
   CPUProfileChunk,
   CPUProfileChunkNode,
   CPUProfileChunker,
-  SourceMap,
 } from '../types/EventInterfaces';
 import { EventsPhase } from '../types/Phases';
 
@@ -269,20 +271,14 @@ export class CpuProfilerModel {
       return sample;
     });
     const stackFrameIds: string[] = Object.keys(stackFrames);
-    // TODO: What should URLs be? Change name to get things from SourceMaps
-
     const profileNodes: CPUProfileChunkNode[] = stackFrameIds.map(
       (stackFrameId: string) => {
+        const stackFrame = stackFrames[stackFrameId];
         return {
           id: Number(stackFrameId),
           callFrame: {
-            line: stackFrames[stackFrameId].line,
-            column: stackFrames[stackFrameId].column,
-            funcLine: stackFrames[stackFrameId].funcLine,
-            funcColumn: stackFrames[stackFrameId].funcColumn,
-            name: stackFrames[stackFrameId].name,
-            category: stackFrames[stackFrameId].category,
-            url: 'TODO',
+            ...stackFrame,
+            url: stackFrame.name,
           },
           parent: stackFrames[stackFrameId].parent,
         };
@@ -307,68 +303,5 @@ export class CpuProfilerModel {
       sampleNumbers: returnedSamples,
       timeDeltas,
     };
-  }
-
-  /**
-   * Refer to the source maps for the `index.bundle` file. Throws error if debug server not running
-   * @param {string} metroServerURL
-   * @param {DurationEvent[]} chromeEvents
-   * @throws {Debug Server not running}
-   * @returns {DurationEvent[]}
-   */
-  static async changeNamesToSourceMaps(
-    metroServerURL: string,
-    chromeEvents: DurationEvent[]
-  ): Promise<DurationEvent[]> {
-    /**
-     * To eliminate Metro Server depedency, sourceMap needs to be the input of this function NOT
-     * metroServerURL
-     */
-    const response = (await axios.get(metroServerURL)) as AxiosResponse<
-      SourceMap
-    >;
-    if (!response.data) {
-      throw new Error('Incorrect Debug Port Provided');
-    }
-    const sourceMap: SourceMap = response.data;
-    const rawSourceMap: RawSourceMap = {
-      version: Number(sourceMap.version),
-      file: 'index.bundle',
-      sources: sourceMap.sources,
-      mappings: sourceMap.mappings,
-      names: sourceMap.names,
-    };
-
-    const consumer = await new SourceMapConsumer(rawSourceMap);
-    const events = chromeEvents.map((event: DurationEvent) => {
-      const sm = consumer.originalPositionFor({
-        line: Number(event.args?.data.callFrame.line),
-        column: Number(event.args?.data.callFrame.column),
-      });
-      event.args = {
-        data: {
-          callFrame: {
-            ...event.args?.data.callFrame,
-            url: sm.source,
-            line: sm.line,
-            column: sm.column,
-          },
-        },
-      };
-      /**
-       * The name in source maps (for reasons I don't understand) is sometimes null, so OR-ing this
-       * to ensure a name is assigned.
-       * In case a name wasn't found, the URL is used
-       * Eg: /Users/saphal/Desktop/app/node_modules/react-native/Libraries/BatchedBridge/MessageQueue.js => MessageQueue.js
-       */
-      event.name =
-        sm.name ||
-        (event.args?.data.callFrame.url
-          ? event.args?.data.callFrame.url.split('/').pop()
-          : event.args?.data.callFrame.name);
-      return event;
-    });
-    consumer.destroy();
-    return events;
   }
 }
