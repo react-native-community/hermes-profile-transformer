@@ -1,43 +1,38 @@
-import { readFileSync, writeFileSync } from 'fs';
-import ip from 'ip';
-import minimist from 'minimist';
+import { promises } from 'fs';
 
 import { CpuProfilerModel } from './profiler/cpuProfilerModel';
-import { DurationEvent } from 'types/EventInterfaces';
-
-const argv = minimist(process.argv.slice(2));
-if (!('port' in argv)) {
-  console.log('No DEBUG_PORT provided, using 8081 by default');
-} else {
-  console.log(
-    `Make sure the React Native Debugging server is running on port ${argv['port']} on your local machine`
-  );
-}
-
-/* Read Hermes Profile
- **Replace with CLI transform function as it will just give the path of the CPU profile,
- **adopting same model here
- */
-
-const PROFILE_PATH = 'nestedFuncProfile.cpuprofile';
-const DEBUG_SERVER_PORT: string =
-  argv['port'] || process.env.RCT_METRO_PORT || '8081';
-const IP_ADDRESS = ip.address();
-const PLATFORM = 'android';
-const RN_SOURCE_MAP: string = `http://${IP_ADDRESS}:${DEBUG_SERVER_PORT}/index.map?platform=${PLATFORM}&dev=true`;
-const hermesProfile = JSON.parse(readFileSync(PROFILE_PATH, 'utf-8'));
-
-const profileChunk = CpuProfilerModel.collectProfileEvents(hermesProfile);
-const profiler = new CpuProfilerModel(profileChunk);
-const chromeEvents = profiler.createStartEndEvents();
+import { changeNamesToSourceMaps } from './profiler/sourceMapper';
+import { DurationEvent, SourceMap } from 'types/EventInterfaces';
 
 /**
- * This function currently takes the input as the RN_SOURCE_MAP URL, however we need to convert this to
- * take in sourceMap
- * @see {CpuProfilerModel.changeNamesToSourceMaps}
+ * This transformer can take in the path of the profile, the source map (optional) and the bundle file name (optional)
+ * and return a promise which resolves to Chrome Dev Tools compatible events
+ * @param profilePath string
+ * @param sourceMapPath string
+ * @param bundleFileName string
+ * @return Promise<DurationEvent[]>
  */
-CpuProfilerModel.changeNamesToSourceMaps(RN_SOURCE_MAP, chromeEvents).then(
-  (events: DurationEvent[]) => {
-    writeFileSync(`${PROFILE_PATH.split('.')[0]}.json`, JSON.stringify(events));
+export const transformer = async (
+  profilePath: string,
+  sourceMapPath: string | undefined,
+  bundleFileName: string | undefined
+): Promise<DurationEvent[]> => {
+  const hermesProfile = JSON.parse(
+    await promises.readFile(profilePath, 'utf-8')
+  );
+  const profileChunk = CpuProfilerModel.collectProfileEvents(hermesProfile);
+  const profiler = new CpuProfilerModel(profileChunk);
+  const chromeEvents = profiler.createStartEndEvents();
+  if (sourceMapPath) {
+    const sourceMap: SourceMap = JSON.parse(
+      await promises.readFile(sourceMapPath, 'utf-8')
+    );
+    const events = changeNamesToSourceMaps(
+      sourceMap,
+      chromeEvents,
+      bundleFileName
+    );
+    return events;
   }
-);
+  return chromeEvents;
+};
