@@ -3,9 +3,6 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "bin": {
-    "cli": "./dist/cli.js"
-  },
   "files": [
     "dist",
     "src"
@@ -42,12 +39,6 @@
     "typescript": "^3.9.5"
   },
   "dependencies": {
-    "@types/axios": "^0.14.0",
-    "@types/ip": "^1.1.0",
-    "@types/minimist": "^1.2.0",
-    "axios": "^0.19.2",
-    "ip": "^1.1.5",
-    "minimist": "^1.2.5",
     "source-map": "^0.7.3"
   }
 }

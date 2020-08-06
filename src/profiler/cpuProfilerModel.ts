@@ -224,7 +224,7 @@ export class CpuProfilerModel {
    *
    * @param {HermesCPUProfile} profile
    * @throws Profile must have atleast one sample
-   * @return {Array<CpuProfile>}
+   * @return {CPUProfileChunk}
    */
   static collectProfileEvents(profile: HermesCPUProfile): CPUProfileChunk {
     if (profile.samples.length >= 0) {
@@ -259,8 +259,8 @@ export class CpuProfilerModel {
    * CPUProfileChunk object which will be processed to give createStartEndEvents()
    *
    * @param {HermesSample} samples
-   * @param {Map<string, HermesStackFrame>} stackFrames
-   * @return { Array<CPUProfileChunkNode>, Array<number>, Array<number> }
+   * @param {<string, HermesStackFrame>} stackFrames
+   * @return {CPUProfileChunker}
    */
   static constructNodes(
     samples: HermesSample[],
