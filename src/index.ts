@@ -1,8 +1,9 @@
 import { promises } from 'fs';
 
 import { CpuProfilerModel } from './profiler/cpuProfilerModel';
+import { DurationEvent } from './types/EventInterfaces';
 import { changeNamesToSourceMaps } from './profiler/sourceMapper';
-import { DurationEvent, SourceMap } from 'types/EventInterfaces';
+import { SourceMap } from './types/SourceMaps';
 
 /**
  * This transformer can take in the path of the profile, the source map (optional) and the bundle file name (optional)

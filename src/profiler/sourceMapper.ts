@@ -1,5 +1,6 @@
 import { SourceMapConsumer, RawSourceMap } from 'source-map';
-import { SourceMap, DurationEvent } from '../types/EventInterfaces';
+import { DurationEvent } from '../types/EventInterfaces';
+import { SourceMap } from '../types/SourceMaps';
 
 /**
  * Refer to the source maps for the bundleFileName. Throws error if args not set up in ChromeEvents

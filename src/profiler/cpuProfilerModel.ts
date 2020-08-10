@@ -33,14 +33,16 @@
  */
 
 import {
-  DurationEvent,
-  HermesCPUProfile,
-  HermesSample,
-  HermesStackFrame,
   CPUProfileChunk,
   CPUProfileChunkNode,
   CPUProfileChunker,
-} from '../types/EventInterfaces';
+} from '../types/CPUProfile';
+import { DurationEvent } from '../types/EventInterfaces';
+import {
+  HermesCPUProfile,
+  HermesSample,
+  HermesStackFrame,
+} from '../types/HermesProfile';
 import { EventsPhase } from '../types/Phases';
 
 export class CpuProfilerModel {

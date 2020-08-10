@@ -1,28 +1,15 @@
-# hermes-profile-transformer
+# Hermes Profile Transformer
 
-TypeScript tool for converting Hermes Sampling Profiler output to Chrome Dev Tools format
-This project was bootstrapped with [TSDX](https://github.com/jaredpalmer/tsdx).
+A package written in TypeScript for converting Hermes Sampled Profile into Events supported by Chrome Dev Tools
+![Demo Profile](./assets/convertedProfile.png)
 
-## Local Development
+The Hermes Profile Transformer takes as input the `path to the Hermes Profile file` and outputs `a CPU Profile that can be loaded into Chrome Dev Tools`.
 
-Below is a list of commands you will probably find useful.
+The transformer can optionally also take in a `Source Map` or rather the `path to the source map file` (and the bundle filename) and output rectified function names, line and column numbers to facilitate easy debugging and profiling.
 
-### `npm start` or `yarn start`
+## Usage
 
-Runs the project in development/watch mode. Your project will be rebuilt upon changes. TSDX has a special logger for your convenience. Error messages are pretty printed and formatted for compatibility VS Code's Problems tab.
-
-<img src="https://user-images.githubusercontent.com/4060187/52168303-574d3a00-26f6-11e9-9f3b-71dbec9ebfcb.gif" width="600" />
-
-Your library will be rebuilt if you make edits.
-
-### `npm run build` or `yarn build`
-
-Bundles the package to the `dist` folder.
-The package is optimized and bundled with Rollup into multiple formats (CommonJS, UMD, and ES Module).
-
-<img src="https://user-images.githubusercontent.com/4060187/52168322-a98e5b00-26f6-11e9-8cf6-222d716b75ef.gif" width="600" />
-
-### `npm test` or `yarn test`
-
-Runs the test watcher (Jest) in an interactive mode.
-By default, runs tests related to files changed since the last commit.
+1. Import the transformer function into your project.
+2. Pass the path of the Profile file into the function.
+3. The function returns the profile in Chrome supported events as a promise. You need to await the result of the function to actually obtain the events.
+4. These events can then be stored to the file system and shown in Chrome Dev Tools.
