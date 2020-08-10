@@ -49,7 +49,7 @@ export const changeNamesToSourceMaps = async (
       event.name =
         sm.name ||
         (event.args.data.callFrame.url
-          ? event.args.data.callFrame.url.split('/').pop()
+          ? `anonymous @ ${event.args.data.callFrame.url.split('/').pop()}`
           : event.args.data.callFrame.name);
     }
     return event;
