@@ -13,7 +13,7 @@ import { SourceMap } from './types/SourceMaps';
  * @param bundleFileName string
  * @return Promise<DurationEvent[]>
  */
-export const transformer = async (
+const transformer = async (
   profilePath: string,
   sourceMapPath: string | undefined,
   bundleFileName: string | undefined
@@ -34,8 +34,5 @@ export const transformer = async (
   return chromeEvents;
 };
 
-transformer(
-  '/Users/zomato/Desktop/hermes-test-profile/xyz.cpuprofile',
-  undefined,
-  undefined
-).catch(err => console.log(err));
+export default transformer;
+export { SourceMap } from './types/SourceMaps';

@@ -48,5 +48,12 @@
   },
   "dependencies": {
     "source-map": "^0.7.3"
-  }
+  },
+  "keywords": [
+    "profiling",
+    "hermes",
+    "transformation",
+    "transformers",
+    "dev-tools"
+  ]
 }

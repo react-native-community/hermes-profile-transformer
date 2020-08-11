@@ -1,7 +1,7 @@
 # Hermes Profile Transformer
 
 A package written in TypeScript for converting Hermes Sampled Profile into Events supported by Chrome Dev Tools
-![Demo Profile](./assets/convertedProfile.png)
+![Demo Profile](https://raw.githubusercontent.com/MLH-Fellowship/hermes-profile-transformer/master/assets/convertedProfile.png)
 
 The Hermes Profile Transformer takes as input the `path to the Hermes Profile file` and outputs `a CPU Profile that can be loaded into Chrome Dev Tools`.
 
