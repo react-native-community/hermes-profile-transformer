@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -30,7 +30,15 @@
     "trailingComma": "es5"
   },
   "name": "hermes-tracing-profile-transformer",
-  "author": "0.4.1 Reactive Sea-son",
+  "author": {
+    "name": "Saphal Patro",
+    "email": "saphal1998@gmail.com",
+    "url": "http://github.com/saphal1998"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MLH-Fellowship/hermes-profile-transformer"
+  },
   "module": "dist/hermes-tracing-profile-transformer.esm.js",
   "devDependencies": {
     "husky": "^4.2.5",

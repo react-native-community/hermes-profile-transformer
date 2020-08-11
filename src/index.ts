@@ -1,7 +1,7 @@
-import { promises } from 'fs';
-
 import { CpuProfilerModel } from './profiler/cpuProfilerModel';
 import { DurationEvent } from './types/EventInterfaces';
+import { readFile } from './utils/fileSystem';
+import { HermesCPUProfile } from './types/HermesProfile';
 import { changeNamesToSourceMaps } from './profiler/sourceMapper';
 import { SourceMap } from './types/SourceMaps';
 
@@ -18,16 +18,12 @@ export const transformer = async (
   sourceMapPath: string | undefined,
   bundleFileName: string | undefined
 ): Promise<DurationEvent[]> => {
-  const hermesProfile = JSON.parse(
-    await promises.readFile(profilePath, 'utf-8')
-  );
+  const hermesProfile: HermesCPUProfile = await readFile(profilePath);
   const profileChunk = CpuProfilerModel.collectProfileEvents(hermesProfile);
   const profiler = new CpuProfilerModel(profileChunk);
   const chromeEvents = profiler.createStartEndEvents();
   if (sourceMapPath) {
-    const sourceMap: SourceMap = JSON.parse(
-      await promises.readFile(sourceMapPath, 'utf-8')
-    );
+    const sourceMap: SourceMap = await readFile(sourceMapPath);
     const events = changeNamesToSourceMaps(
       sourceMap,
       chromeEvents,
@@ -37,3 +33,9 @@ export const transformer = async (
   }
   return chromeEvents;
 };
+
+transformer(
+  '/Users/zomato/Desktop/hermes-test-profile/xyz.cpuprofile',
+  undefined,
+  undefined
+).catch(err => console.log(err));
