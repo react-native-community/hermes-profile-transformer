@@ -24,18 +24,6 @@ const improveCategories = (
 };
 
 /**
- * This function is a helper to the changeNamesToSourceMaps. The naming logic is implemented here based on the sourcemap url (if available)
- * @param sourceMapName
- * @param url
- * @param eventName
- */
-const improveName = (defaultEventName: string, url: string | null): string => {
-  return url
-    ? `${defaultEventName} @ ${url.split('/').pop()}`
-    : defaultEventName;
-};
-
-/**
  * Refer to the source maps for the bundleFileName and change the event names to derive
  * from source maps which usually add more information for the user
  * Throws error if args not set up in ChromeEvents
@@ -67,13 +55,6 @@ export const changeNamesToSourceMaps = async (
         line: Number(event.args.line),
         column: Number(event.args.column),
       });
-      /**
-       * The name in source maps is sometimes null, so OR-ing this
-       * to ensure a name is assigned.
-       * In case a name wasn't found, the URL is used
-       * Eg: /Users/saphal/Desktop/app/node_modules/react-native/Libraries/BatchedBridge/MessageQueue.js => MessageQueue.js
-       */
-      event.name = improveName(event.name!, sm.source);
       /**
        * The categories can help us better visualise the profile if we modify the categories.
        * We change these categories only in the root level and not deeper inside the args, just so we have our
