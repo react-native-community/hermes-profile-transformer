@@ -144,7 +144,6 @@ export class CpuProfilerModel {
     const endNodes: CPUProfileChunkNode[] = previousNodeIds
       .filter(id => !currentNodeIds.includes(id))
       .map(id => this._nodesById.get(id)!);
-
     /**
      * Create a Duration Event from CPUProfileChunkNodes.
      * @param {CPUProfileChunkNode} node
@@ -188,7 +187,7 @@ export class CpuProfilerModel {
     let lastActiveNodeIds: number[] = [];
     for (let i = 0; i < profile.samples.length; i++) {
       const nodeId = profile.samples[i];
-      const timeDelta = Math.max(profile.timeDeltas[i], 1);
+      const timeDelta = Math.max(profile.timeDeltas[i], 0);
       const node = this._nodesById.get(nodeId);
       if (!node) throw new Error(`Missing node ${nodeId}`);
 
