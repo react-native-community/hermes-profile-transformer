@@ -171,11 +171,15 @@ export class CpuProfilerModel {
   /**
    * Creates B/E-style trace events from a CpuProfile object created by `collectProfileEvents()`
    * @return {DurationEvent}
+   * @throws If the length of timeDeltas array or the samples array does not match with the length of samples in Hermes Profile
    */
   createStartEndEvents(): DurationEvent[] {
     const profile = this._profile;
     const length = profile.samples.length;
-    if (profile.timeDeltas.length !== length)
+    if (
+      profile.timeDeltas.length !== length ||
+      profile.samples.length !== length
+    )
       throw new Error(`Invalid CPU profile length`);
 
     const events: DurationEvent[] = [];

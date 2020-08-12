@@ -1,9 +1,13 @@
 import { readFile } from '../utils/fileSystem';
+import path from 'path';
 
 describe('FileSystem Read CPUProfile', () => {
   it('Should read valid profiles', async () => {
-    const filePath =
-      '/Users/zomato/Desktop/hermes-test-profile/f13000.cpuprofile';
+    const filePath = path.join(
+      '..',
+      'hermes-test-profile',
+      'f13000.cpuprofile'
+    );
     expect(Object.keys(await readFile(filePath))).toEqual([
       'traceEvents',
       'samples',
@@ -12,7 +16,7 @@ describe('FileSystem Read CPUProfile', () => {
   });
   it('Should throw for invalid paths', async () => {
     const filePath = '';
-    expect(await readFile(filePath)).toThrow(
+    expect(async () => await readFile(filePath)).toThrow(
       `ENOENT: no such file or directory, open '${filePath}'`
     );
   });

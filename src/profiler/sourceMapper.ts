@@ -7,6 +7,7 @@ import { SourceMap } from '../types/SourceMaps';
  * @param {SourceMap} sourceMap
  * @param {DurationEvent[]} chromeEvents
  * @param {string} indexBundleFileName
+ * @throws If `args` for events are not populated
  * @returns {DurationEvent[]}
  */
 export const changeNamesToSourceMaps = async (
@@ -52,6 +53,10 @@ export const changeNamesToSourceMaps = async (
         (event.args.data.callFrame.url
           ? `anonymous @ ${event.args.data.callFrame.url.split('/').pop()}`
           : event.args.data.callFrame.name);
+    } else {
+      throw new Error(
+        `Source maps could not be derived for an event at ${event.ts} and with stackFrame ID ${event.sf}`
+      );
     }
     return event;
   });
