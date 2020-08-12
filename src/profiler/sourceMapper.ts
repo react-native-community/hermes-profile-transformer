@@ -1,9 +1,44 @@
+import path from 'path';
 import { SourceMapConsumer, RawSourceMap } from 'source-map';
 import { DurationEvent } from '../types/EventInterfaces';
 import { SourceMap } from '../types/SourceMaps';
 
 /**
- * Refer to the source maps for the bundleFileName. Throws error if args not set up in ChromeEvents
+ * This function is a helper to the changeNamesToSourceMaps. The category allocation logic is implemented here based on the sourcemap url (if available)
+ * @param defaultCategory The category the event is of by default without the use of Source maps
+ * @param url The URL which can be parsed to interpret the new category of the event (depends on node_modules)
+ */
+const improveCategories = (
+  defaultCategory: string,
+  url: string | null
+): string => {
+  const obtainCategory = (url: string): string => {
+    const dirs = url
+      .substring(url.lastIndexOf(`${path.sep}node_modules${path.sep}`))
+      .split(path.sep);
+    return dirs.length > 2 && dirs[1] === 'node_modules'
+      ? dirs[2]
+      : defaultCategory;
+  };
+  return url ? obtainCategory(url) : defaultCategory;
+};
+
+/**
+ * This function is a helper to the changeNamesToSourceMaps. The naming logic is implemented here based on the sourcemap url (if available)
+ * @param sourceMapName
+ * @param url
+ * @param eventName
+ */
+const improveName = (defaultEventName: string, url: string | null): string => {
+  return url
+    ? `${defaultEventName} @ ${url.split('/').pop()}`
+    : defaultEventName;
+};
+
+/**
+ * Refer to the source maps for the bundleFileName and change the event names to derive
+ * from source maps which usually add more information for the user
+ * Throws error if args not set up in ChromeEvents
  * @param {SourceMap} sourceMap
  * @param {DurationEvent[]} chromeEvents
  * @param {string} indexBundleFileName
@@ -29,30 +64,31 @@ export const changeNamesToSourceMaps = async (
   const events = chromeEvents.map((event: DurationEvent) => {
     if (event.args) {
       const sm = consumer.originalPositionFor({
-        line: Number(event.args.data.callFrame.line),
-        column: Number(event.args.data.callFrame.column),
+        line: Number(event.args.line),
+        column: Number(event.args.column),
       });
-      event.args = {
-        data: {
-          callFrame: {
-            ...event.args?.data.callFrame,
-            url: sm.source,
-            line: sm.line,
-            column: sm.column,
-          },
-        },
-      };
       /**
-       * The name in source maps (for reasons I don't understand) is sometimes null, so OR-ing this
+       * The name in source maps is sometimes null, so OR-ing this
        * to ensure a name is assigned.
        * In case a name wasn't found, the URL is used
        * Eg: /Users/saphal/Desktop/app/node_modules/react-native/Libraries/BatchedBridge/MessageQueue.js => MessageQueue.js
        */
-      event.name =
-        sm.name ||
-        (event.args.data.callFrame.url
-          ? `anonymous @ ${event.args.data.callFrame.url.split('/').pop()}`
-          : event.args.data.callFrame.name);
+      event.name = improveName(event.name!, sm.source);
+      /**
+       * The categories can help us better visualise the profile if we modify the categories.
+       * We change these categories only in the root level and not deeper inside the args, just so we have our
+       * original categories as well as these modified categories (as the modified categories simply help with visualisation)
+       */
+      event.cat = improveCategories(event.cat!, sm.source);
+      event.args = {
+        ...event.args,
+        url: sm.source,
+        line: sm.line,
+        column: sm.column,
+        params: sm.name,
+        allocatedCategory: event.cat,
+        allocatedName: event.name,
+      };
     } else {
       throw new Error(
         `Source maps could not be derived for an event at ${event.ts} and with stackFrame ID ${event.sf}`

@@ -144,6 +144,19 @@ export class CpuProfilerModel {
     const endNodes: CPUProfileChunkNode[] = previousNodeIds
       .filter(id => !currentNodeIds.includes(id))
       .map(id => this._nodesById.get(id)!);
+
+    /**
+     * The name needs to be modified if `http://` is present as this directs us to bundle files which does not add any information for the end user
+     * @param name
+     */
+    const removeLinksIfExist = (name: string): string => {
+      // If the name includes `http://`, we can filter the name
+      if (name.includes('http://')) {
+        name = name.substring(0, name.lastIndexOf('('));
+      }
+      return name || 'anonymous';
+    };
+
     /**
      * Create a Duration Event from CPUProfileChunkNodes.
      * @param {CPUProfileChunkNode} node
@@ -153,9 +166,9 @@ export class CpuProfilerModel {
       pid: this._profile.pid,
       tid: Number(this._profile.tid),
       ph: EventsPhase.DURATION_EVENTS_BEGIN,
-      name: node.callFrame.name,
+      name: removeLinksIfExist(node.callFrame.name),
       cat: node.callFrame.category,
-      args: { data: { callFrame: node.callFrame } },
+      args: { ...node.callFrame },
     });
 
     const startEvents: DurationEvent[] = startNodes
