@@ -3,7 +3,7 @@ import { DurationEvent } from './types/EventInterfaces';
 import { readFile } from './utils/fileSystem';
 import { HermesCPUProfile } from './types/HermesProfile';
 import { changeNamesToSourceMaps } from './profiler/sourceMapper';
-import { SourceMap } from './types/SourceMaps';
+import { SourceMap } from './types/SourceMap';
 
 /**
  * This transformer can take in the path of the profile, the source map (optional) and the bundle file name (optional)
@@ -35,4 +35,4 @@ const transformer = async (
 };
 
 export default transformer;
-export { SourceMap } from './types/SourceMaps';
+export { SourceMap } from './types/SourceMap';

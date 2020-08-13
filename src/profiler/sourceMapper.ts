@@ -1,7 +1,7 @@
 import path from 'path';
 import { SourceMapConsumer, RawSourceMap } from 'source-map';
 import { DurationEvent } from '../types/EventInterfaces';
-import { SourceMap } from '../types/SourceMaps';
+import { SourceMap } from '../types/SourceMap';
 
 /**
  * This function is a helper to the changeNamesToSourceMaps. The category allocation logic is implemented here based on the sourcemap url (if available)
