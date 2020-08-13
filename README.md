@@ -50,7 +50,7 @@ transformer(
 
 Open Developer Tools in Chrome, navigate to the **Performance** tab, and use the **Load profile...** feature.
 
-(Screenshot here)
+![Loading the Profile](https://raw.githubusercontent.com/MLH-Fellowship/hermes-profile-transformer/master/assets/loading.png)
 
 ## API
 
