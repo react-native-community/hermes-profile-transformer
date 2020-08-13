@@ -16,7 +16,6 @@ pids
 *.pid.lock
 
 # Generated Profiles
-*.json
 *.cpuprofile
 
 # Files specifically for debugging
