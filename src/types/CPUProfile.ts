@@ -2,7 +2,6 @@
  * The CPUProfileChunk is the intermediate file that Lighthouse can interpret and
  *  hence subsequently convert to events supported by Chrome Dev Tools
  */
-
 export interface CPUProfileChunk {
   id: string;
   pid: number;

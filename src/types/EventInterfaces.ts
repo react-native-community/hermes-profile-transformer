@@ -1,5 +1,9 @@
 import { EventsPhase } from './Phases';
 
+// All of the event types in this module are not currently
+// being used, but they are included here for completeness
+// for future implementers
+
 export interface SharedEventProperties {
   /**
    * name of the event
