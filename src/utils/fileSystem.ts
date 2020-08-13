@@ -9,6 +9,6 @@ export const readFile = async (path: string): Promise<any> => {
     const obj = JSON.parse(fileString);
     return obj;
   } catch (err) {
-    throw new Error(err.message);
+    throw err;
   }
 };
