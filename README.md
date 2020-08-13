@@ -1,15 +1,79 @@
 # Hermes Profile Transformer
 
-A package written in TypeScript for converting Hermes Sampled Profile into Events supported by Chrome Dev Tools
+Visualize Facebook's [Hermes JavaScript runtime](https://github.com/facebook/hermes) profile traces in Chrome Developer Tools.
+
 ![Demo Profile](https://raw.githubusercontent.com/MLH-Fellowship/hermes-profile-transformer/master/assets/convertedProfile.png)
 
-The Hermes Profile Transformer takes as input the `path to the Hermes Profile file` and outputs `a CPU Profile that can be loaded into Chrome Dev Tools`.
+## Overview
 
-The transformer can optionally also take in a `Source Map` or rather the `path to the source map file` (and the bundle filename) and output rectified function names, line and column numbers to facilitate easy debugging and profiling.
+The Hermes runtime, used by React Native for Android, is able to output [Chrome Trace Events](https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview) in JSON Object Format.
+
+This TypeScript package converts Hermes CPU profiles to Chrome Developer Tools compatible JSON Array Format, and enriches it with line and column numbers and event categories from JavaScript source maps.
 
 ## Usage
 
-1. Import the transformer function into your project.
-2. Pass the path of the Profile file into the function.
-3. The function returns the profile in Chrome supported events as a promise. You need to await the result of the function to actually obtain the events.
-4. These events can then be stored to the file system and shown in Chrome Dev Tools.
+If you're using `hermes-profile-transformer` to debug React Native Android applications, you can use the [React Native CLI](https://github.com/react-native-community/cli) `react-native profile-hermes` command, which uses this package to convert the downloaded Hermes profiles automatically.
+
+### As a standalone package
+
+```js
+const transformer = require('hermes-profile-transformer').default;
+const { promises } = require('fs');
+
+const hermesCpuProfilePath = './testprofile.cpuprofile';
+const sourceMapPath = './index.map';
+const sourceMapBundleFileName = 'index.bundle.js';
+
+transformer(
+  // profile path is required
+  hermesCpuProfilePath,
+  // source maps are optional
+  sourceMap,
+  sourceMapBundleFileName
+)
+  .then(events => {
+    // write converted trace to a file
+    return promises.writeFile(
+      './chrome-supported.json',
+      JSON.stringify(events, null, 2),
+      'utf-8'
+    );
+  })
+  .catch(err => {
+    console.log(err);
+  });
+```
+
+## Creating Hermes CPU Profiles
+
+## Opening converted profiles in Chrome Developer Tools
+
+Open Developer Tools in Chrome, navigate to the **Performance** tab, and use the **Load profile...** feature.
+
+(Screenshot here)
+
+## API
+
+### transformer(profilePath: string, sourceMapPath?: string, bundleFileName?: string)
+
+#### Parameters
+
+| Parameter      | Type   | Required | Description                                                                                                                                                               |
+| -------------- | ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| profilePath    | string | Yes      | Path to a JSON-formatted `.cpuprofile` file created by the Hermes runtime                                                                                                 |
+| sourceMapPath  | string | No       | Path to a [source-map](https://www.npmjs.com/package/source-map) compatible Source Map file                                                                               |
+| bundleFileName | string | No       | If `sourceMapPath` is provided, you need to also provide the name of the JavaScript bundle file that the source map applies to. This file does not need to exist on disk. |
+
+#### Returns
+
+`Promise<DurationEvent[]>`, where `DurationEvent` is as defined in [EventInterfaces.ts](src/types/EventInterfaces.ts).
+
+## Resources
+
+- [Using Hermes with React Native](https://reactnative.dev/docs/hermes).
+- [Chrome Trace Event Format](https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview). Hermes uses the JSON Object format.
+- [Measuring JavaScript performance in Chrome](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference)
+
+## LICENSE
+
+[MIT](LICENSE)
