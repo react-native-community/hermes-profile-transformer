@@ -2,7 +2,7 @@ import { CpuProfilerModel } from './profiler/cpuProfilerModel';
 import { DurationEvent } from './types/EventInterfaces';
 import { readFile } from './utils/fileSystem';
 import { HermesCPUProfile } from './types/HermesProfile';
-import { changeNamesToSourceMaps } from './profiler/sourceMapper';
+import applySourceMapsToEvents from './profiler/applySourceMapsToEvents';
 import { SourceMap } from './types/SourceMap';
 
 /**
@@ -24,7 +24,7 @@ const transformer = async (
   const chromeEvents = profiler.createStartEndEvents();
   if (sourceMapPath) {
     const sourceMap: SourceMap = await readFile(sourceMapPath);
-    const events = changeNamesToSourceMaps(
+    const events = applySourceMapsToEvents(
       sourceMap,
       chromeEvents,
       bundleFileName

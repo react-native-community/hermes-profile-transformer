@@ -4,7 +4,7 @@ import { DurationEvent } from '../types/EventInterfaces';
 import { SourceMap } from '../types/SourceMap';
 
 /**
- * This function is a helper to the changeNamesToSourceMaps. The category allocation logic is implemented here based on the sourcemap url (if available)
+ * This function is a helper to the applySourceMapsToEvents. The category allocation logic is implemented here based on the sourcemap url (if available)
  * @param defaultCategory The category the event is of by default without the use of Source maps
  * @param url The URL which can be parsed to interpret the new category of the event (depends on node_modules)
  */
@@ -24,8 +24,10 @@ const improveCategories = (
 };
 
 /**
- * Refer to the source maps for the bundleFileName and change the event names to derive
- * from source maps which usually add more information for the user
+ * Enhances the function line, column and params information and event categories
+ * based on JavaScript source maps to make it easier to associate trace events with
+ * the application code
+ *
  * Throws error if args not set up in ChromeEvents
  * @param {SourceMap} sourceMap
  * @param {DurationEvent[]} chromeEvents
@@ -33,7 +35,7 @@ const improveCategories = (
  * @throws If `args` for events are not populated
  * @returns {DurationEvent[]}
  */
-export const changeNamesToSourceMaps = async (
+const applySourceMapsToEvents = async (
   sourceMap: SourceMap,
   chromeEvents: DurationEvent[],
   indexBundleFileName: string | undefined
@@ -80,3 +82,5 @@ export const changeNamesToSourceMaps = async (
   consumer.destroy();
   return events;
 };
+
+export default applySourceMapsToEvents;
