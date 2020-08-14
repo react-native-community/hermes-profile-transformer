@@ -1,8 +1,10 @@
-import { promises } from 'fs';
+import { readFile } from 'fs';
+import { promisify } from 'util';
 
-export const readFile = async (path: string): Promise<any> => {
+export const readFileAsync = async (path: string): Promise<any> => {
   try {
-    const fileString: string = await promises.readFile(path, 'utf-8');
+    const readFileAsync = promisify(readFile);
+    const fileString: string = (await readFileAsync(path, 'utf-8')) as string;
     if (fileString.length === 0) {
       throw new Error(`${path} is an empty file`);
     }
