@@ -1,6 +1,6 @@
 import { CpuProfilerModel } from './profiler/cpuProfilerModel';
 import { DurationEvent } from './types/EventInterfaces';
-import { readFile } from './utils/fileSystem';
+import { readFileAsync } from './utils/fileSystem';
 import { HermesCPUProfile } from './types/HermesProfile';
 import applySourceMapsToEvents from './profiler/applySourceMapsToEvents';
 import { SourceMap } from './types/SourceMap';
@@ -18,12 +18,12 @@ const transformer = async (
   sourceMapPath: string | undefined,
   bundleFileName: string | undefined
 ): Promise<DurationEvent[]> => {
-  const hermesProfile: HermesCPUProfile = await readFile(profilePath);
+  const hermesProfile: HermesCPUProfile = await readFileAsync(profilePath);
   const profileChunk = CpuProfilerModel.collectProfileEvents(hermesProfile);
   const profiler = new CpuProfilerModel(profileChunk);
   const chromeEvents = profiler.createStartEndEvents();
   if (sourceMapPath) {
-    const sourceMap: SourceMap = await readFile(sourceMapPath);
+    const sourceMap: SourceMap = await readFileAsync(sourceMapPath);
     const events = applySourceMapsToEvents(
       sourceMap,
       chromeEvents,
