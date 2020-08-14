@@ -1,5 +1,13 @@
 # Hermes Profile Transformer
 
+<p align="center">
+<img alt="npm" src="https://img.shields.io/npm/v/hermes-profile-transformer">
+<img alt="node-current" src="https://img.shields.io/node/v/hermes-profile-transformer">
+<img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/hermes-profile-transformer">
+<img alt="NPM" src="https://img.shields.io/npm/l/hermes-profile-transformer">
+<img alt="npm type definitions" src="https://img.shields.io/npm/types/hermes-profile-transformer">
+</p>
+
 Visualize Facebook's [Hermes JavaScript runtime](https://github.com/facebook/hermes) profile traces in Chrome Developer Tools.
 
 ![Demo Profile](https://raw.githubusercontent.com/MLH-Fellowship/hermes-profile-transformer/master/assets/convertedProfile.png)
