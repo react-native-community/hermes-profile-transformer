@@ -26,7 +26,7 @@ If you're using `hermes-profile-transformer` to debug React Native Android appli
 
 ```js
 const transformer = require('hermes-profile-transformer').default;
-const { promises } = require('fs');
+const { writeFileSync } = require('fs');
 
 const hermesCpuProfilePath = './testprofile.cpuprofile';
 const sourceMapPath = './index.map';
@@ -41,7 +41,7 @@ transformer(
 )
   .then(events => {
     // write converted trace to a file
-    return promises.writeFile(
+    return writeFileSync(
       './chrome-supported.json',
       JSON.stringify(events, null, 2),
       'utf-8'
