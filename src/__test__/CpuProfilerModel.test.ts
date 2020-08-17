@@ -493,7 +493,7 @@ describe('CPU Profiler Model', () => {
       );
 
       // Atleast 2 samples must be present
-      expect(profileChunk.timeDeltas.length).toBeGreaterThanOrEqual(2);
+      expect(profileChunk.samples.length).toBeGreaterThanOrEqual(2);
 
       // The first element of timeDeltas should be 0
       expect(profileChunk.timeDeltas[0]).toEqual(0);
