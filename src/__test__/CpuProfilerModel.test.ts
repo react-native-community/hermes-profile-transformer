@@ -404,9 +404,6 @@ describe('CPU Profiler Model', () => {
       const uniquePhases = chromeEvents
         .map(event => event.ph)
         .filter((value, index, self) => self.indexOf(value) === index);
-
-      // Only two types of events
-      expect(uniquePhases.length).toEqual(2);
       // Only duration events supported as of now
       expect(uniquePhases).toMatchObject([
         EventsPhase.DURATION_EVENTS_BEGIN,
