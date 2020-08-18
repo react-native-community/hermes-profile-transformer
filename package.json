@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MLH-Fellowship/hermes-profile-transformer"
+    "url": "https://github.com/react-native-community/hermes-profile-transformer"
   },
   "module": "dist/hermes-tracing-profile-transformer.esm.js",
   "devDependencies": {
@@ -54,6 +54,9 @@
     "hermes",
     "transformation",
     "transformers",
-    "dev-tools"
+    "dev-tools",
+    "react-native",
+    "react-native-community",
+    "react-native-cli"
   ]
 }
