@@ -40,7 +40,7 @@ const improveCategories = (
   if (reactNativeModuleNames.includes(nodeModuleName)) {
     return 'react-native-internals';
   } else {
-    return 'node_modules';
+    return 'other_node_modules';
   }
 };
 
