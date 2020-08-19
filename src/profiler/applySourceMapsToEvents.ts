@@ -4,11 +4,11 @@ import { DurationEvent } from '../types/EventInterfaces';
 import { SourceMap } from '../types/SourceMap';
 
 /**
- * This function is a helper to the applySourceMapsToEvents. The category allocation logic is implemented here based on the sourcemap url (if available)
+ * This function is a helper to the applySourceMapsToEvents. The node_module identification logic is implemented here based on the sourcemap url (if available). Incase a node_module could not be found, this defaults to the category of the event
  * @param defaultCategory The category the event is of by default without the use of Source maps
  * @param url The URL which can be parsed to interpret the new category of the event (depends on node_modules)
  */
-const improveCategories = (
+const findNodeModuleNameIfExists = (
   defaultCategory: string,
   url: string | null
 ): string => {
@@ -21,6 +21,27 @@ const improveCategories = (
       : defaultCategory;
   };
   return url ? obtainCategory(url) : defaultCategory;
+};
+
+/**
+ * The unification of categories is important as we want identify the specific reasons why the application slows down, namely via unoptimised native/JS code, or react-native renders or third party modules. The common colours for node_modules can help idenitfy problems instantly
+ * @param nodeModuleName The node module name associated with the event obtained via sourcemap, this nodeModule name is simply the output of @see findNodeModuleNameIfExists
+ */
+const improveCategories = (
+  nodeModuleName: string,
+  defaultCategory: string
+): string => {
+  // The nodeModuleName obtained from `findNodeModuleNameIfExists` by default is the original category name in the generated Hermes Profile. If we cannot isolate a nodeModule name, we simply return with the default category
+  if (nodeModuleName === defaultCategory) {
+    return defaultCategory;
+  }
+  // The events from these modules will fall under the umbrella of react-native events and hence be represented by the same colour
+  const reactNativeModuleNames = ['react-native', 'react', 'metro'];
+  if (reactNativeModuleNames.includes(nodeModuleName)) {
+    return 'react-native-internals';
+  } else {
+    return 'other_node_modules';
+  }
 };
 
 /**
@@ -62,7 +83,11 @@ const applySourceMapsToEvents = async (
        * We change these categories only in the root level and not deeper inside the args, just so we have our
        * original categories as well as these modified categories (as the modified categories simply help with visualisation)
        */
-      event.cat = improveCategories(event.cat!, sm.source);
+      const nodeModuleNameIfAvailable = findNodeModuleNameIfExists(
+        event.cat!,
+        sm.source
+      );
+      event.cat = improveCategories(nodeModuleNameIfAvailable, event.cat!);
       event.args = {
         ...event.args,
         url: sm.source,
@@ -71,6 +96,7 @@ const applySourceMapsToEvents = async (
         params: sm.name,
         allocatedCategory: event.cat,
         allocatedName: event.name,
+        node_module: nodeModuleNameIfAvailable,
       };
     } else {
       throw new Error(
