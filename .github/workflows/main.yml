@@ -22,7 +22,7 @@ jobs:
             nodeModules-
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --production=true
+        run: yarn install --frozen-lockfile
         env:
           CI: true
 
