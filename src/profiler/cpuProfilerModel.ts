@@ -247,7 +247,7 @@ export class CpuProfilerModel {
    * @return {CPUProfileChunk}
    */
   static collectProfileEvents(profile: HermesCPUProfile): CPUProfileChunk {
-    if (profile.samples.length >= 0) {
+    if (profile.samples.length > 0) {
       const { samples, stackFrames } = profile;
       // Assumption: The sample will have a single process
       const pid: number = samples[0].pid;
