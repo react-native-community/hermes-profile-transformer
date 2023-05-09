@@ -38,7 +38,7 @@ transformer(
   // profile path is required
   hermesCpuProfilePath,
   // source maps are optional
-  sourceMap,
+  sourceMapPath,
   sourceMapBundleFileName
 )
   .then(events => {
