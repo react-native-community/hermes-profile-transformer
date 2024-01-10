@@ -74,9 +74,23 @@ const applySourceMapsToEvents = async (
   const consumer = await new SourceMapConsumer(rawSourceMap);
   const events = chromeEvents.map((event: DurationEvent) => {
     if (event.args) {
+      let line = Number(event.args.line);
+      let column = Number(event.args.column);
+
+      // For production profiles we construct line + column from the funcVirtAddr and offset
+      // See https://github.com/facebook/metro/blob/139f58c1eeb7b61318f6307d5be650e5484ea1c5/packages/metro-symbolicate/src/Symbolication.js#L301
+      if (
+        event.args.funcVirtAddr !== undefined &&
+        event.args.offset !== undefined
+      ) {
+        line = 1;
+        column =
+          Number(event.args.funcVirtAddr) + Number(event.args.offset) + 1;
+      }
+
       const sm = consumer.originalPositionFor({
-        line: Number(event.args.line),
-        column: Number(event.args.column),
+        line,
+        column,
       });
       /**
        * The categories can help us better visualise the profile if we modify the categories.
@@ -87,6 +101,7 @@ const applySourceMapsToEvents = async (
         event.cat!,
         sm.source
       );
+
       event.cat = improveCategories(nodeModuleNameIfAvailable, event.cat!);
       event.args = {
         ...event.args,
